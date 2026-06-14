@@ -1,0 +1,25 @@
+/**
+ * Tabby - front-end styles for custom tab panels.
+ *
+ * Intentionally minimal: WooCommerce already styles the tab list and panels.
+ * These rules only tidy Tabby's own heading + content wrapper and inherit the
+ * theme's typography. No layout shift, reduced-motion safe.
+ */
+
+.tabby-tab__title {
+    margin-block: 0 0.5em;
+    font-size: 1.25em;
+    line-height: 1.3;
+}
+
+.tabby-tab__content {
+    max-inline-size: 70ch;
+}
+
+.tabby-tab__content > :first-child {
+    margin-block-start: 0;
+}
+
+.tabby-tab__content > :last-child {
+    margin-block-end: 0;
+}
