@@ -32,7 +32,7 @@
 .woocommerce-Tabs-panel[id^="tab-tabby_"] {
 	/* Themeable tokens — override from a child theme to re-skin Tabby. */
 	--tabby-edge: #b8791f;            /* index-divider goldenrod/ochre    */
-	--tabby-edge-2: #d99a2b;          /* lighter lip, for the spine sheen */
+	--tabby-edge-2: #c5851a;          /* lighter lip, for the spine sheen */
 	--tabby-edge-ink: #6a4410;        /* burnt-card ink for the tab knock */
 	--tabby-edge-width: 4px;          /* width of the visible index lip   */
 	--tabby-gutter: 1.15rem;          /* reserved space for the spine     */
