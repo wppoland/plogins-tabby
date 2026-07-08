@@ -12,10 +12,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Domain: plogins-tabby\n"
+"X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: tabby.php
@@ -81,6 +80,9 @@ msgid ""
 "Master switch. Turn this off to hide every tab below at once without "
 "deleting them, your tabs stay saved and reappear when you turn it back on."
 msgstr ""
+"Przełącznik główny. Wyłącz tę opcję, aby ukryć wszystkie karty poniżej "
+"jednocześnie bez ich usuwania. Twoje karty pozostaną zapisane i pojawią się "
+"ponownie po ponownym włączeniu."
 
 #: src/Admin/Settings.php:138
 msgid "Tabs"
@@ -92,6 +94,10 @@ msgid ""
 "the order listed here. A row with no title is dropped when you save, so "
 "leave a blank row to discard it."
 msgstr ""
+"Każda zakładka jest wyświetlana na każdej stronie produktu, poniżej "
+"natywnych zakładek WooCommerce, w podanej tutaj kolejności. Wiersz bez "
+"tytułu jest usuwany podczas zapisywania, więc pozostaw pusty wiersz, aby go "
+"odrzucić."
 
 #: src/Admin/Settings.php:160
 msgid "Add tab"
@@ -111,7 +117,7 @@ msgstr "Włączona"
 
 #: src/Admin/Settings.php:200
 msgid "shows this tab on the storefront; uncheck to hide just this one"
-msgstr ""
+msgstr "pokazuje tę zakładkę na stronie sklepu; odznacz, aby ukryć tylko ten"
 
 #: src/Admin/Settings.php:204
 msgid "Remove this tab"
@@ -131,6 +137,8 @@ msgstr "Dozwolony jest podstawowy kod HTML (linki, listy, pogrubienie itp.)."
 msgid ""
 "Same HTML as a post, e.g. %s. Scripts and unsafe tags are stripped on save."
 msgstr ""
+"Ten sam kod HTML co post, np. %s. Skrypty i niebezpieczne tagi są usuwane "
+"podczas zapisywania."
 
 #: tabby.php:48
 msgid ""
@@ -142,5 +150,4 @@ msgstr ""
 
 #~ msgid "These tabs appear on every product, in the order listed here."
 #~ msgstr ""
-#~ "Te zakładki pojawiają się przy każdym produkcie, w kolejności podanej "
-#~ "tutaj."
+#~ "Te zakładki pojawiają się przy każdym produkcie, w kolejności podanej tutaj."
