@@ -8,66 +8,69 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: plogins-i18n\n"
 
-msgid "Requires Plugins: woocommerce"
-msgstr "Requiere complementos: woocommerce"
-
 msgid "Add reusable custom tabs with your own content to every WooCommerce product page, alongside the native tabs, with safe HTML."
-msgstr "Añade pestañas personalizadas reutilizables con su propio contenido a cada página de producto de WooCommerce, junto con las pestañas nativas, con HTML seguro."
+msgstr "Añade pestañas personalizadas reutilizables con tu propio contenido a cada página de producto de WooCommerce, junto con las pestañas nativas, con HTML seguro."
 
 msgid "Tabby lets you add your own reusable tabs to the WooCommerce single product page, alongside the native Description, Additional information and Reviews tabs."
-msgstr "Tabby le permite añadir sus propias pestañas reutilizables a la página de producto único de WooCommerce, junto con las pestañas nativas Descripción, Información adicional y Reseñas."
+msgstr "Tabby te permite añadir tus propias pestañas reutilizables a la página de producto individual de WooCommerce, junto con las pestañas nativas Descripción, Información adicional y Reseñas."
 
 msgid "Define your tabs once under <strong>WooCommerce → Tabby Tabs</strong> and they show up on every product. It suits content you'd otherwise paste into each product by hand: shipping and returns, size guides, care instructions, warranty notes."
-msgstr "Defina sus pestañas una vez en <strong>WooCommerce → Tabby Tabs</strong> y aparecerán en todos los productos. Se adapta al contenido que, de otro modo, pegaría a mano en cada producto: envíos y devoluciones, guías de tallas, instrucciones de cuidado, notas de garantía."
+msgstr "Define tus pestañas una vez en <strong>WooCommerce → Tabby Tabs</strong> y aparecerán en todos los productos. Se adapta al contenido que, si no, pegarías a mano en cada producto: envíos y devoluciones, guías de tallas, instrucciones de cuidado, notas de garantía."
 
 msgid "Each tab is a title plus a content box that accepts the same limited HTML WordPress allows in posts (links, lists, bold, headings) via `wp_kses_post`. Your tabs render after the native WooCommerce tabs, and you can toggle each one on or off without deleting it."
-msgstr "Cada pestaña es un título más un cuadro de contenido que acepta el mismo HTML limitado que WordPress permite en las publicaciones (enlaces, listas, negrita, encabezados) a través de `wp_kses_post`. Sus pestañas se muestran después de las pestañas nativas de WooCommerce, y puede activar o desactivar cada una sin eliminarlas."
+msgstr "Cada pestaña es un título más un cuadro de contenido que acepta el mismo HTML limitado que WordPress permite en las entradas (enlaces, listas, negrita, encabezados) mediante `wp_kses_post`. Tus pestañas se muestran después de las pestañas nativas de WooCommerce, y puedes activar o desactivar cada una sin eliminarla."
 
 msgid "The code lives at https://github.com/wppoland/plogins-tabby if you want to read it, report a bug or suggest a tab feature."
-msgstr "El código se encuentra en https://github.com/wppoland/plogins-tabby si desea leerlo, informar un error o sugerir una función de pestaña."
+msgstr "El código está en https://github.com/wppoland/plogins-tabby por si quieres leerlo, informar de un error o sugerir una función de pestañas."
 
 msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-tabby/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-tabby/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-tabby\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-tabby/issues"
-msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-tabby/docs/\n* <strong>Página de complementos</strong> - https://plogins.com/es/plogins-tabby/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-tabby\n* <strong>Informes de errores y solicitudes de funciones</strong> - https://github.com/wppoland/plogins-tabby/issues"
+msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-tabby/docs/\n* <strong>Página del plugin</strong> - https://plogins.com/es/plogins-tabby/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-tabby\n* <strong>Informes de errores y peticiones de funciones</strong> - https://github.com/wppoland/plogins-tabby/issues"
 
 msgid "* Adds your reusable tabs to every single product page, after Description, Additional information and Reviews.\n* Stores tab content as `wp_kses_post`-sanitised HTML, both on save and again on output.\n* Hooks the standard `woocommerce_product_tabs` filter at a late priority, so native and third-party tabs keep their place.\n* Admin screen follows core WordPress styling and respects the editor's light/dark preference.\n* A disabled tab, or one with no content, simply isn't rendered."
-msgstr "* Añade pestañas reutilizables a cada página de producto, después de Descripción, Información adicional y Reseñas.\n* Almacena el contenido de la pestaña como HTML desinfectado con `wp_kses_post`, tanto al guardar como nuevamente al generar.\n* Conecta el filtro estándar `woocommerce_product_tabs` con una prioridad tardía, para que las pestañas nativas y de terceros mantengan su lugar.\n* La pantalla de administración sigue el estilo central de WordPress y respeta la preferencia claro/oscuro del editor.\n* Una pestaña deshabilitada o sin contenido simplemente no se representa."
+msgstr "* Añade tus pestañas reutilizables a cada página de producto, después de Descripción, Información adicional y Reseñas.\n* Almacena el contenido de la pestaña como HTML saneado con `wp_kses_post`, tanto al guardar como de nuevo en la salida.\n* Conecta el filtro estándar `woocommerce_product_tabs` con una prioridad tardía, para que las pestañas nativas y las de terceros mantengan su sitio.\n* La pantalla de administración sigue el estilo del núcleo de WordPress y respeta la preferencia de modo claro/oscuro del editor.\n* Una pestaña desactivada, o sin contenido, simplemente no se renderiza."
 
 msgid "1. Upload the plugin to `/wp-content/plugins/tabby`, or install via Plugins → Add New.\n2. Activate it. WooCommerce must be active.\n3. Go to <strong>WooCommerce → Tabby Tabs</strong> to add your tabs."
-msgstr "1. Cargue el complemento en `/wp-content/plugins/tabby`, o instálelo a través de Complementos → Añadir nuevo.\n2. Actívalo. WooCommerce debe estar activo.\n3. Vaya a <strong>WooCommerce → Tabby Tabs</strong> para añadir sus pestañas."
+msgstr "1. Sube el plugin a `/wp-content/plugins/tabby` o instálalo desde Plugins → Añadir nuevo.\n2. Actívalo. WooCommerce debe estar activo.\n3. Ve a <strong>WooCommerce → Tabby Tabs</strong> para añadir tus pestañas."
 
 msgid "Yes. Tabby requires an active WooCommerce installation."
 msgstr "Sí. Tabby requiere una instalación activa de WooCommerce."
 
 msgid "The same safe subset WordPress allows in post content (`wp_kses_post`): links, lists, headings, bold/italic, images, blockquotes and similar. Scripts and unsafe markup are stripped on save and on render."
-msgstr "El mismo subconjunto seguro que WordPress permite en el contenido de las publicaciones (`wp_kses_post`): enlaces, listas, encabezados, negrita/cursiva, imágenes, citas en bloque y similares. Los scripts y las marcas inseguras se eliminan al guardar y al renderizar."
+msgstr "El mismo subconjunto seguro que WordPress permite en el contenido de las entradas (`wp_kses_post`): enlaces, listas, encabezados, negrita/cursiva, imágenes, citas en bloque y similares. Los scripts y el marcado inseguro se eliminan al guardar y al renderizar."
 
 msgid "On the single product page tab list, after the native WooCommerce tabs (Description, Additional information, Reviews)."
-msgstr "En la lista de pestañas de la página de un solo producto, después de las pestañas nativas de WooCommerce (Descripción, Información adicional, Reseñas)."
+msgstr "En la lista de pestañas de la página de producto individual, después de las pestañas nativas de WooCommerce (Descripción, Información adicional, Reseñas)."
 
 msgid "Yes. Create reusable tabs once under WooCommerce → Tabby, then attach them per product."
-msgstr "Sí. Cree pestañas reutilizables una vez en WooCommerce → Tabby, luego adjúntelas por producto."
+msgstr "Sí. Crea pestañas reutilizables una vez en WooCommerce → Tabby y luego adjúntalas a cada producto."
 
 msgid "Yes. Content is sanitised with `wp_kses_post` on save and on output; scripts are stripped."
-msgstr "Sí. El contenido se desinfecta con `wp_kses_post` al guardar y al generar; Los guiones se eliminan."
+msgstr "Sí. El contenido se sanea con `wp_kses_post` al guardar y en la salida; los scripts se eliminan."
 
 msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
-msgstr "Sí. Este complemento es compatible con WordPress Multisite. Activarlo en red o activarlo en sitios individuales; Cada sitio mantiene su propia configuración y datos."
+msgstr "Sí. Este plugin es compatible con WordPress Multisite. Actívalo en toda la red o en sitios concretos; cada sitio conserva sus propios ajustes y datos."
 
 msgid "1. The Tabby settings screen for managing reusable tabs.\n2. Custom tabs rendered on the single product page."
-msgstr "1. La pantalla de configuración de Tabby para administrar pestañas reutilizables.\n2. Pestañas personalizadas representadas en la página de un solo producto."
+msgstr "1. La pantalla de ajustes de Tabby para gestionar pestañas reutilizables.\n2. Pestañas personalizadas renderizadas en la página de producto individual."
 
 msgid "Tabby does not connect to any external services. It makes no remote API calls, loads no fonts, scripts or styles from a third party, and sends no data off your site. Your tab definitions are stored locally in a single WordPress option (`tabby_settings`), with a version marker in `tabby_db_version`, and both are removed on uninstall. The admin and front-end CSS and JavaScript it loads are bundled with the plugin and served from your own site."
-msgstr "Tabby no se conecta a ningún servicio externo. No realiza llamadas API remotas, no carga fuentes, scripts o estilos de terceros y no envía datos fuera de tu sitio. Las definiciones de sus pestañas se almacenan localmente en una única opción de WordPress (`tabby_settings`), con un marcador de versión en `tabby_db_version`, y ambas se eliminan al desinstalarlas. El administrador y el CSS y JavaScript del front-end que carga se incluyen con el complemento y se sirven desde tu propio sitio."
+msgstr "Tabby no se conecta a ningún servicio externo. No realiza llamadas remotas a la API, no carga fuentes, scripts ni estilos de terceros y no envía datos fuera de tu sitio. Tus definiciones de pestañas se almacenan localmente en una única opción de WordPress (`tabby_settings`), con un marcador de versión en `tabby_db_version`, y ambas se eliminan al desinstalar. El CSS y el JavaScript de administración y de frontend que carga se incluyen con el plugin y se sirven desde tu propio sitio."
+
+msgid "Plogins Tabby includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-tabby`, so WordPress.org language packs can also override or extend these bundled translations."
+msgstr "Plogins Tabby incluye traducciones al polaco, alemán y español para la interfaz del plugin. El dominio de texto es `plogins-tabby`, así que los paquetes de idioma de WordPress.org también pueden sustituir o ampliar estas traducciones incluidas."
+
+msgid "* Added bundled Polish, German and Spanish translations for the plugin interface."
+msgstr "* Añadidas traducciones al polaco, alemán y español para la interfaz del plugin."
 
 msgid "* First stable release."
 msgstr "* Primera versión estable."
 
 msgid "* Renamed to Plogins Tabby for WooCommerce for a more distinctive plugin name."
-msgstr "* Renombrado a Plogins Tabby para WooCommerce para obtener un nombre de complemento más distintivo."
+msgstr "* Renombrado a Plogins Tabby para WooCommerce para un nombre de plugin más distintivo."
 
 msgid "* `tabby/use_rich_tab_content` and `tabby/tab_panel_html` filters so premium add-ons can run shortcodes and blocks in tab bodies."
-msgstr "* Filtros `tabby/use_rich_tab_content` y `tabby/tab_panel_html` para que los complementos premium puedan ejecutar códigos cortos y bloques en los cuerpos de las pestañas."
+msgstr "* Filtros `tabby/use_rich_tab_content` y `tabby/tab_panel_html` para que los complementos premium puedan ejecutar shortcodes y bloques en el cuerpo de las pestañas."
 
 msgid "* Initial release: reusable custom product tabs with safe HTML content, managed from a WooCommerce-submenu settings screen."
-msgstr "* Lanzamiento inicial: pestañas de productos personalizadas reutilizables con contenido HTML seguro, administradas desde una pantalla de configuración del submenú de WooCommerce."
+msgstr "* Lanzamiento inicial: pestañas de producto personalizadas y reutilizables con contenido HTML seguro, gestionadas desde una pantalla de ajustes en el submenú de WooCommerce."
 
