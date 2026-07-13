@@ -1,4 +1,4 @@
-=== Plogins Tabby - Product Tabs for WooCommerce ===
+=== Tabby - Product Tabs for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
