@@ -4,44 +4,44 @@ Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.1
-Wymaga wtyczek: woocommerce
+Stable tag: 1.0.2
+Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Dodaj niestandardowe karty wielokrotnego użytku z własną treścią do każdej strony produktu WooCommerce, obok zakładek natywnych, z bezpiecznym kodem HTML.
+Dodaj do każdej strony produktu WooCommerce własne zakładki wielokrotnego użytku z własną treścią, obok zakładek natywnych, z bezpiecznym kodem HTML.
 
 == Description ==
 
 Tabby umożliwia dodawanie własnych zakładek wielokrotnego użytku do strony pojedynczego produktu WooCommerce, obok natywnych zakładek Opis, Dodatkowe informacje i Recenzje.
 
-Zdefiniuj swoje karty raz w <strong>WooCommerce → Tabby Tabby</strong>, a będą one wyświetlane przy każdym produkcie. Pasuje do treści, które w przeciwnym razie wklejałbyś ręcznie do każdego produktu: wysyłka i zwroty, przewodniki po rozmiarach, instrukcje dotyczące pielęgnacji, uwagi gwarancyjne.
+Zdefiniuj swoje zakładki raz w <strong>WooCommerce → Tabby Tabs</strong>, a pojawią się przy każdym produkcie. Sprawdza się przy treściach, które inaczej wklejałbyś ręcznie do każdego produktu: wysyłka i zwroty, tabele rozmiarów, instrukcje pielęgnacji, informacje o gwarancji.
 
-Każda zakładka to tytuł i pole treści, które akceptuje ten sam ograniczony kod HTML, na jaki pozwala WordPress w postach (linki, listy, pogrubienie, nagłówki) za pośrednictwem `wp_kses_post`. Twoje karty renderują się po natywnych kartach WooCommerce i możesz włączać i wyłączać każdą z nich bez usuwania.
+Każda zakładka to tytuł oraz pole treści, które przyjmuje ten sam ograniczony zestaw HTML, na jaki WordPress pozwala we wpisach (linki, listy, pogrubienie, nagłówki) — poprzez `wp_kses_post`. Twoje zakładki renderują się po natywnych zakładkach WooCommerce i możesz włączać lub wyłączać każdą z nich bez usuwania.
 
-Kod znajduje się pod adresem https://github.com/wppoland/plogins-tabby, jeśli chcesz go przeczytać, zgłosić błąd lub zasugerować funkcję zakładki.
+Kod jest dostępny pod adresem https://github.com/wppoland/plogins-tabby, jeśli chcesz go przejrzeć, zgłosić błąd lub zaproponować funkcję zakładek.
 
 = Documentation and links =
 
 * <strong>Dokumentacja</strong> - https://plogins.com/pl/plogins-tabby/docs/
 * <strong>Strona wtyczki</strong> - https://plogins.com/pl/plogins-tabby/
 * <strong>Kod źródłowy</strong> - https://github.com/wppoland/plogins-tabby
-* <strong>Raporty o błędach i prośby o nowe funkcje</strong> - https://github.com/wppoland/plogins-tabby/issues
+* <strong>Zgłoszenia błędów i propozycje funkcji</strong> - https://github.com/wppoland/plogins-tabby/issues
 
 
 = What it does =
 
-* Dodaje zakładki wielokrotnego użytku do każdej strony produktu, po opisie, informacjach dodatkowych i recenzjach.
-* Przechowuje zawartość zakładek w formacie HTML oczyszczonym za pomocą `wp_kses_post`, zarówno przy zapisywaniu, jak i ponownym wyświetlaniu.
-* Przechwytuje standardowy filtr `woocommerce_product_tabs` z późnym priorytetem, dzięki czemu karty natywne i strony trzecie zachowują swoje miejsce.
-* Ekran administracyjny jest zgodny ze stylem WordPressa i uwzględnia preferencje redaktora dotyczące jasności/ciemności.
-* Wyłączona karta lub taka, która nie zawiera treści, po prostu nie jest renderowana.
+* Dodaje Twoje zakładki wielokrotnego użytku do każdej strony produktu, po zakładkach Opis, Informacje dodatkowe i Recenzje.
+* Przechowuje treść zakładek jako kod HTML oczyszczony przez `wp_kses_post`, zarówno przy zapisie, jak i ponownie przy wyświetlaniu.
+* Podpina standardowy filtr `woocommerce_product_tabs` z późnym priorytetem, dzięki czemu zakładki natywne i te od podmiotów trzecich zachowują swoje miejsce.
+* Ekran administracyjny jest zgodny ze stylem rdzenia WordPressa i respektuje preferencję jasnego/ciemnego trybu edytora.
+* Wyłączona zakładka lub taka bez treści po prostu nie jest renderowana.
 
 == Installation ==
 
-1. Prześlij wtyczkę do `/wp-content/plugins/tabby` lub zainstaluj poprzez Wtyczki → Dodaj nową.
-2. Aktywuj. WooCommerce musi być aktywny.
-3. Przejdź do <strong>WooCommerce → Tabby Tabby</strong>, aby dodać swoje karty.
+1. Prześlij wtyczkę do `/wp-content/plugins/tabby` lub zainstaluj przez Wtyczki → Dodaj nową.
+2. Włącz ją. WooCommerce musi być aktywne.
+3. Przejdź do <strong>WooCommerce → Tabby Tabs</strong>, aby dodać swoje zakładki.
 
 == Frequently Asked Questions ==
 
@@ -51,7 +51,7 @@ Tak. Tabby wymaga aktywnej instalacji WooCommerce.
 
 = What HTML is allowed in tab content? =
 
-Ten sam bezpieczny podzbiór WordPress pozwala na zawartość postów („wp_kses_post”): linki, listy, nagłówki, pogrubienie/kursywa, obrazy, cytaty blokowe i tym podobne. Skrypty i niebezpieczne znaczniki są usuwane podczas zapisywania i renderowania.
+Ten sam bezpieczny podzbiór, na jaki WordPress pozwala w treści wpisów (`wp_kses_post`): linki, listy, nagłówki, pogrubienie/kursywa, obrazy, cytaty blokowe i podobne. Skrypty i niebezpieczne znaczniki są usuwane przy zapisie i renderowaniu.
 
 = Where do the custom tabs appear? =
 
@@ -59,16 +59,16 @@ Na liście zakładek na stronie pojedynczego produktu, po natywnych zakładkach 
 
 = Can I reuse the same tab on many products? =
 
-Tak. Utwórz zakładki wielokrotnego użytku w WooCommerce → Tabby, a następnie dołącz je do każdego produktu.
+Tak. Utwórz zakładki wielokrotnego użytku raz w WooCommerce → Tabby, a następnie podłącz je do poszczególnych produktów.
 
 = Is tab HTML safe? =
 
-Tak. Treść jest oczyszczana za pomocą `wp_kses_post` przy zapisywaniu i wyjściu; skrypty są usuwane.
+Tak. Treść jest oczyszczana za pomocą `wp_kses_post` przy zapisie i na wyjściu; skrypty są usuwane.
 
 
 = Does this plugin work on WordPress Multisite? =
 
-Tak. Ta wtyczka jest kompatybilna z WordPress Multisite. Aktywuj go w sieci lub aktywuj na poszczególnych stronach; każda witryna przechowuje własne ustawienia i dane.
+Tak. Ta wtyczka jest kompatybilna z WordPress Multisite. Włącz ją dla całej sieci lub w poszczególnych witrynach; każda witryna zachowuje własne ustawienia i dane.
 
 == Screenshots ==
 
@@ -77,9 +77,16 @@ Tak. Ta wtyczka jest kompatybilna z WordPress Multisite. Aktywuj go w sieci lub 
 
 == External Services ==
 
-Tabby nie łączy się z żadnymi usługami zewnętrznymi. Nie wykonuje zdalnych wywołań API, nie ładuje czcionek, skryptów ani stylów od osób trzecich i nie wysyła żadnych danych poza Twoją witrynę. Twoje definicje zakładek są przechowywane lokalnie w jednej opcji WordPress („tabby_settings”), ze znacznikiem wersji w „tabby_db_version” i oba są usuwane podczas dezinstalacji. Ładowane przez niego administracyjne i front-endowe CSS i JavaScript są dołączone do wtyczki i udostępniane z Twojej własnej witryny.
+Tabby nie łączy się z żadnymi usługami zewnętrznymi. Nie wykonuje zdalnych wywołań API, nie ładuje czcionek, skryptów ani stylów od podmiotów trzecich i nie wysyła żadnych danych poza Twoją witrynę. Twoje definicje zakładek są przechowywane lokalnie w jednej opcji WordPressa (`tabby_settings`), ze znacznikiem wersji w `tabby_db_version` — oba są usuwane przy odinstalowaniu. Ładowane przez wtyczkę CSS i JavaScript panelu oraz front-endu są dołączone do wtyczki i serwowane z Twojej własnej witryny.
+
+== Translations ==
+
+Plogins Tabby zawiera polskie, niemieckie i hiszpańskie tłumaczenia interfejsu wtyczki. Domena tekstowa to `plogins-tabby`, więc pakiety językowe z WordPress.org mogą też nadpisywać lub rozszerzać te dołączone tłumaczenia.
 
 == Changelog ==
+
+= 1.0.2 =
+* Dodano dołączone polskie, niemieckie i hiszpańskie tłumaczenia interfejsu wtyczki.
 
 = 1.0.1 =
 * Pierwsza stabilna wersja.
@@ -88,7 +95,7 @@ Tabby nie łączy się z żadnymi usługami zewnętrznymi. Nie wykonuje zdalnych
 * Zmieniono nazwę na Plogins Tabby dla WooCommerce, aby uzyskać bardziej charakterystyczną nazwę wtyczki.
 
 = 0.1.1 =
-* Filtry `tabby/use_rich_tab_content` i `tabby/tab_panel_html`, dzięki którym dodatki premium mogą uruchamiać krótkie kody i bloki w treści zakładek.
+* Filtry `tabby/use_rich_tab_content` i `tabby/tab_panel_html`, dzięki którym dodatki premium mogą uruchamiać shortcode i bloki w treści zakładek.
 
 = 0.1.0 =
-* Pierwsza wersja: niestandardowe karty produktów wielokrotnego użytku z bezpieczną zawartością HTML, zarządzane z poziomu ekranu ustawień podmenu WooCommerce.
+* Pierwsza wersja: niestandardowe zakładki produktów wielokrotnego użytku z bezpieczną zawartością HTML, zarządzane z poziomu ekranu ustawień w podmenu WooCommerce.
