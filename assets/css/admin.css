@@ -200,25 +200,6 @@
 }
 
 /* Dark-mode pass (admin colour scheme + system preference). */
-@media (prefers-color-scheme: dark) {
-    .tabby-admin {
-        /* Storefront dark-edge token #d99a2b: 6.81:1 on #1e1e22 (AA text + UI). */
-        --tabby-accent: #d99a2b;
-        --tabby-accent-text: #d99a2b;
-        --tabby-card-bg: #1e1e22;
-        --tabby-card-border: #3c434a;
-        --tabby-muted: #c3c4c7;
-    }
-
-    .tabby-repeater__row {
-        background: color-mix(in srgb, var(--tabby-accent) 10%, #1e1e22);
-    }
-
-    .tabby-repeater__hint code {
-        background: color-mix(in srgb, var(--tabby-accent) 14%, #1e1e22);
-    }
-}
-
 @media (prefers-reduced-motion: reduce) {
     .tabby-admin * {
         transition: none !important;
