@@ -33,7 +33,7 @@ El código está en https://github.com/wppoland/plogins-tabby por si quieres lee
 
 * Añade tus pestañas reutilizables a cada página de producto, después de Descripción, Información adicional y Reseñas.
 * Almacena el contenido de la pestaña como HTML saneado con `wp_kses_post`, tanto al guardar como de nuevo en la salida.
-* Conecta el filtro estándar `woocommerce_product_tabs` con una prioridad tardía, para que las pestañas nativas y las de terceros mantengan su sitio.
+* Conecta el filtro estándar `woocommerce_product_tabs` con una prioridad tardía, para que las pestañas nativas y las de terceros mantengan tu sitio.
 * La pantalla de administración sigue el estilo del núcleo de WordPress y respeta la preferencia de modo claro/oscuro del editor.
 * Una pestaña desactivada, o sin contenido, simplemente no se renderiza.
 
