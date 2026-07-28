@@ -1,23 +1,23 @@
 /*
- * Tabby — front-end styling for the custom tab panels it files into the
+ * Tabby, front-end styling for the custom tab panels it files into the
  * WooCommerce single-product tab strip.
  *
  * World: a tabbed index binder. Each Tabby panel is a divider sheet, and the
- * one thing that marks it as ours is the colour of its index-tab edge — the
+ * one thing that marks it as ours is the colour of its index-tab edge, the
  * raised spine running down the inside edge of the panel, the way the coloured
  * lip of a manila divider pokes past the sheet in front of it. The accent is
  * deliberately an index-divider goldenrod/ochre, NOT a default e-commerce blue
  * or green: it is the colour of a kraft-card tab and a marbled ledger edge.
  *
  * The one earned micro-interaction: when a shopper opens one of Tabby's tabs,
- * the sheet "files into place" — a single short settle (slide up a few pixels +
+ * the sheet "files into place", a single short settle (slide up a few pixels +
  * fade) as if drawn out from behind the tab in front of it. It fires only on
  * Tabby's own panels, never on the native Description / Reviews panels, and is
  * fully disabled under prefers-reduced-motion.
  *
  * Restraint everywhere else: typography and panel chrome are inherited from the
  * theme; we add no borders, no boxes, no shadows beyond the single tab-edge
- * spine. Zero layout shift — the spine lives in a reserved inline-start gutter,
+ * spine. Zero layout shift, the spine lives in a reserved inline-start gutter,
  * the settle animates transform/opacity only. Every colour, size and timing is
  * a themeable --tabby-* token with a theme-inheriting fallback.
  */
@@ -30,7 +30,7 @@
 .woocommerce-tabs .panel[id^="tab-tabby_"],
 .wc-tabs-wrapper .panel[id^="tab-tabby_"],
 .woocommerce-Tabs-panel[id^="tab-tabby_"] {
-	/* Themeable tokens — override from a child theme to re-skin Tabby. */
+	/* Themeable tokens, override from a child theme to re-skin Tabby. */
 	--tabby-edge: #b8791f;            /* index-divider goldenrod/ochre    */
 	--tabby-edge-2: #c5851a;          /* lighter lip, for the spine sheen */
 	--tabby-edge-ink: #6a4410;        /* burnt-card ink for the tab knock */
@@ -46,7 +46,7 @@
 /*
  * The index-tab spine: the coloured edge of the divider sheet. A thin lip
  * pinned to the inline-start of the panel, with a short raised "tab knock" at
- * the top — the part that would poke above the sheet in front of it. Drawn with
+ * the top, the part that would poke above the sheet in front of it. Drawn with
  * a gradient so it reads as a folded card edge catching light, not a flat rule.
  */
 .woocommerce-tabs .panel[id^="tab-tabby_"]::before,
@@ -67,7 +67,7 @@
 }
 
 /*
- * The "tab knock": a short, slightly wider nub at the top of the spine — the
+ * The "tab knock": a short, slightly wider nub at the top of the spine, the
  * lip of the index tab that sits proud of the page edge. It overlaps the
  * reserved gutter, so it adds no extra width and causes no layout shift.
  */
@@ -110,7 +110,7 @@
  * The earned micro-interaction: "file into place". WooCommerce reveals a panel
  * by switching it from display:none to display:block; an element entering from
  * display:none restarts its animations, so this settle replays each time the
- * shopper opens one of Tabby's tabs — and only Tabby's.
+ * shopper opens one of Tabby's tabs, and only Tabby's.
  *
  * The heading leads (the tab is grabbed first), the sheet follows a beat later,
  * both rising the last few pixels into the binder as they fade in.

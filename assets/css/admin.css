@@ -200,7 +200,7 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Pure advertising (no disabled inputs), scoped entirely
  * to the .tabby-admin settings wrapper so nothing leaks into wp-admin.
  * Reuses the family --tabby-* tokens: the ochre accent (#a86d18) and the
