@@ -5,33 +5,33 @@ msgstr ""
 "Project-Id-Version: Tabby - Custom Product Tabs for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tabby\n"
 "POT-Creation-Date: 2026-06-16T20:23:22+00:00\n"
-"PO-Revision-Date: 2026-06-15 12:00+0000\n"
+"PO-Revision-Date: 2026-06-16T20:23:22+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
-"Language-Team: Polish <pl@li.org>\n"
-"Language: pl_PL\n"
+"Language-Team: German <de@li.org>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Domain: plogins-tabby\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: tabby.php
 msgid "Tabby - Custom Product Tabs for WooCommerce"
-msgstr "Tabby - Własne zakładki produktów dla WooCommerce"
+msgstr "Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce"
 
 #. Plugin URI of the plugin
 #: tabby.php
 msgid "https://plogins.com/tabby/"
-msgstr "https://plogins.com/tabby/"
+msgstr "https://plogins.com/de/tabby/"
 
 #. Description of the plugin
 #: tabby.php
 msgid "Add custom tabs with your own content to WooCommerce product pages."
 msgstr ""
-"Dodawaj własne zakładki z własną treścią do stron produktów WooCommerce."
+"Füge benutzerdefinierte Registerkarten mit deinen eigenen Inhalten zu "
+"WooCommerce-Produktseiten hinzu."
 
 #. Author of the plugin
 #: tabby.php
@@ -45,49 +45,49 @@ msgstr "https://plogins.com/"
 
 #: src/Admin/Settings.php:57
 msgid "Tabby - Custom Product Tabs"
-msgstr "Tabby - Własne zakładki produktów"
+msgstr "Tabby, Benutzerdefinierte Produktregisterkarten"
 
 #: src/Admin/Settings.php:58
 msgid "Tabby Tabs"
-msgstr "Zakładki Tabby"
+msgstr "Tabby-Tabs"
 
 #: src/Admin/Settings.php:102
 msgid "Reusable tabs for every product page"
-msgstr "Zakładki wielokrotnego użytku dla każdej strony produktu"
+msgstr "Wiederverwendbare Registerkarten für jede Produktseite"
 
 #: src/Admin/Settings.php:103
 msgid ""
 "Define tabs once and they appear on all single product pages, after the "
 "native WooCommerce tabs. Basic HTML is allowed in tab content."
 msgstr ""
-"Zdefiniuj zakładki raz, a pojawią się na wszystkich stronach pojedynczych "
-"produktów, za natywnymi zakładkami WooCommerce. W treści zakładek dozwolony "
-"jest podstawowy kod HTML."
+"Definiere Tabs einmal und sie erscheinen auf allen einzelnen Produktseiten "
+"nach den nativen WooCommerce-Tabs. Im Tab-Inhalt ist einfaches HTML zulässig."
 
 #: src/Admin/Settings.php:111
 msgid "General"
-msgstr "Ogólne"
+msgstr "Allgemein"
 
 #: src/Admin/Settings.php:115
 msgid "Enable Tabby"
-msgstr "Włącz Tabby"
+msgstr "Tabby aktivieren"
 
 #: src/Admin/Settings.php:126
 msgid "Render custom tabs on single product pages."
-msgstr "Renderuj własne zakładki na stronach pojedynczych produktów."
+msgstr ""
+"Rendern Sie benutzerdefinierte Registerkarten auf einzelnen Produktseiten."
 
 #: src/Admin/Settings.php:129
 msgid ""
 "Master switch. Turn this off to hide every tab below at once without "
 "deleting them, your tabs stay saved and reappear when you turn it back on."
 msgstr ""
-"Przełącznik główny. Wyłącz tę opcję, aby ukryć wszystkie karty poniżej "
-"jednocześnie bez ich usuwania. Twoje karty pozostaną zapisane i pojawią się "
-"ponownie po ponownym włączeniu."
+"Hauptschalter. Deaktiviere diese Option, um alle unten aufgeführten Tabs "
+"gleichzeitig auszublenden, ohne sie zu löschen. deine Tabs bleiben "
+"gespeichert und werden wieder angezeigt, wenn du sie wieder aktivieren."
 
 #: src/Admin/Settings.php:138
 msgid "Tabs"
-msgstr "Zakładki"
+msgstr "Tabs"
 
 #: src/Admin/Settings.php:139
 msgid ""
@@ -95,42 +95,44 @@ msgid ""
 "the order listed here. A row with no title is dropped when you save, so "
 "leave a blank row to discard it."
 msgstr ""
-"Każda zakładka jest wyświetlana na każdej stronie produktu, poniżej "
-"natywnych zakładek WooCommerce, w podanej tutaj kolejności. Wiersz bez "
-"tytułu jest usuwany podczas zapisywania, więc pozostaw pusty wiersz, aby go "
-"odrzucić."
+"Jede Registerkarte wird auf jeder Produktseite unterhalb der nativen "
+"WooCommerce-Registerkarten in der hier aufgeführten Reihenfolge angezeigt. "
+"Eine Zeile ohne Titel wird beim Speichern gelöscht. Lass also eine leere "
+"Zeile, um sie zu verwerfen."
 
 #: src/Admin/Settings.php:160
 msgid "Add tab"
-msgstr "Dodaj zakładkę"
+msgstr "Registerkarte hinzufügen"
 
 #: src/Admin/Settings.php:183
 msgid "Tab title"
-msgstr "Tytuł zakładki"
+msgstr "Tab-Titel"
 
 #: src/Admin/Settings.php:189
 msgid "e.g. Shipping & Returns"
-msgstr "np. Wysyłka i zwroty"
+msgstr "z.B. Versand und Rücksendungen"
 
 #: src/Admin/Settings.php:199
 msgid "Enabled"
-msgstr "Włączona"
+msgstr "Aktiviert"
 
 #: src/Admin/Settings.php:200
 msgid "shows this tab on the storefront; uncheck to hide just this one"
-msgstr "pokazuje tę zakładkę na stronie sklepu; odznacz, aby ukryć tylko ten"
+msgstr ""
+"zeigt diese Registerkarte auf der Storefront an; Deaktiviere das "
+"Kontrollkästchen, um nur dieses auszublenden"
 
 #: src/Admin/Settings.php:204
 msgid "Remove this tab"
-msgstr "Usuń tę zakładkę"
+msgstr "Entferne diese Registerkarte"
 
 #: src/Admin/Settings.php:208
 msgid "Tab content"
-msgstr "Treść zakładki"
+msgstr "Tab-Inhalt"
 
 #: src/Admin/Settings.php:213
 msgid "Basic HTML is allowed (links, lists, bold, etc.)."
-msgstr "Dozwolony jest podstawowy kod HTML (linki, listy, pogrubienie itp.)."
+msgstr "Einfaches HTML ist zulässig (Links, Listen, Fettdruck usw.)."
 
 #. translators: %s: an example HTML snippet shown as inline guidance.
 #: src/Admin/Settings.php:219
@@ -138,78 +140,73 @@ msgstr "Dozwolony jest podstawowy kod HTML (linki, listy, pogrubienie itp.)."
 msgid ""
 "Same HTML as a post, e.g. %s. Scripts and unsafe tags are stripped on save."
 msgstr ""
-"Ten sam kod HTML co post, np. %s. Skrypty i niebezpieczne tagi są usuwane "
-"podczas zapisywania."
+"Gleicher HTML-Code wie ein Beitrag, z. B. %s. Skripte und unsichere Tags "
+"werden beim Speichern entfernt."
 
 #: tabby.php:48
 msgid ""
 "Tabby - Custom Product Tabs for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Tabby - Własne zakładki produktów dla WooCommerce wymaga aktywnej wtyczki "
-"WooCommerce."
+"Für Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce muss "
+"WooCommerce aktiv sein."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
-msgstr "Wkrótce"
+msgstr "Demnächst"
 
 #: src/Admin/ProUpsell.php:78
 msgid "Coming soon"
-msgstr "Wkrótce"
+msgstr "Demnächst"
 
 #. translators: %d: yearly price in PLN
 #: src/Admin/ProUpsell.php:83
 #, php-format
 msgid "od %d zł/rok"
-msgstr "od %d zł/rok"
+msgstr "ab %d zł/Jahr"
 
 #. translators: 1: currency symbol, 2: yearly price
 #: src/Admin/ProUpsell.php:88
 #, php-format
 msgid "from %1$s%2$d/yr"
-msgstr "od %1$s%2$d/rok"
+msgstr "ab %1$s%2$d/Jahr"
 
 #: src/Admin/ProUpsell.php:97
 msgid "Upgrade to PRO"
-msgstr "Przejdź na PRO"
+msgstr "Auf PRO upgraden"
 
 #: src/Admin/ProUpsell.php:98
 msgid "Powiadom mnie"
-msgstr "Powiadom mnie"
+msgstr "Benachrichtige mich"
 
 #: src/Admin/ProUpsell.php:98
 msgid "Get notified"
-msgstr "Powiadom mnie"
+msgstr "Benachrichtige mich"
 
 #: src/Admin/ProUpsell.php:128
 msgid "Permission denied."
-msgstr "Brak uprawnień."
+msgstr "Zugriff verweigert."
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:158
 #, php-format
 msgid "Do more with %s"
-msgstr "Zrób więcej dzięki %s"
+msgstr "Mehr erreichen mit %s"
 
 #: src/Admin/ProUpsell.php:165
 msgid "Dismiss this notice"
-msgstr "Odrzuć to powiadomienie"
+msgstr "Diesen Hinweis ausblenden"
 
 #: src/Admin/ProUpsell.php:182
 msgid "Unlock every PRO feature"
-msgstr "Odblokuj wszystkie funkcje PRO"
+msgstr "Alle PRO-Funktionen freischalten"
 
 #: src/Admin/ProUpsell.php:195
 msgid "one licence, every PRO feature"
-msgstr "jedna licencja, wszystkie funkcje PRO"
+msgstr "eine Lizenz, alle PRO-Funktionen"
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:214
 #, php-format
 msgid "What %s adds"
-msgstr "Co dodaje %s"
-
-#~ msgid "These tabs appear on every product, in the order listed here."
-#~ msgstr ""
-#~ "Te zakładki pojawiają się przy każdym produkcie, w kolejności podanej "
-#~ "tutaj."
+msgstr "Was %s ergänzt"

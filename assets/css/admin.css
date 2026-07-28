@@ -199,26 +199,185 @@
     font-size: 0.85rem;
 }
 
-/* Dark-mode pass (admin colour scheme + system preference). */
-@media (prefers-color-scheme: dark) {
-    .tabby-admin {
-        /* Storefront dark-edge token #d99a2b: 6.81:1 on #1e1e22 (AA text + UI). */
-        --tabby-accent: #d99a2b;
-        --tabby-accent-text: #d99a2b;
-        --tabby-card-bg: #1e1e22;
-        --tabby-card-border: #3c434a;
-        --tabby-muted: #c3c4c7;
-    }
+/* ------------------------------------------------------------------ *
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
+ * locked cards. Pure advertising (no disabled inputs), scoped entirely
+ * to the .tabby-admin settings wrapper so nothing leaks into wp-admin.
+ * Reuses the family --tabby-* tokens: the ochre accent (#a86d18) and the
+ * darker --tabby-accent-text (#8a5a14, 5.91:1 with #fff button text, AA).
+ * ------------------------------------------------------------------ */
 
-    .tabby-repeater__row {
-        background: color-mix(in srgb, var(--tabby-accent) 10%, #1e1e22);
-    }
+/* Top banner */
+.tabby-admin .tabby-pro-banner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-block: var(--tabby-gap) 1.5rem;
+    padding: 12px 16px;
+    border: 1px solid color-mix(in srgb, var(--tabby-accent) 30%, var(--tabby-card-border));
+    border-inline-start: 4px solid var(--tabby-accent);
+    border-radius: var(--tabby-card-radius);
+    background: color-mix(in srgb, var(--tabby-accent) 6%, var(--tabby-card-bg));
+}
+.tabby-admin .tabby-pro-banner__tag,
+.tabby-admin .tabby-pro-card__badge,
+.tabby-admin .tabby-pro-aside__eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.tabby-admin .tabby-pro-banner__tag {
+    flex: 0 0 auto;
+    padding: 2px 8px;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--tabby-accent-text);
+}
+.tabby-admin .tabby-pro-banner__text {
+    flex: 1 1 auto;
+    margin: 0;
+}
+.tabby-admin .tabby-pro-banner__sub {
+    margin-inline-start: 4px;
+    color: var(--tabby-muted);
+}
+.tabby-admin .tabby-pro-banner__price {
+    margin-inline-start: 6px;
+    color: var(--tabby-muted);
+    font-weight: 600;
+    white-space: nowrap;
+}
+.tabby-admin .tabby-pro-banner__dismiss {
+    flex: 0 0 auto;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--tabby-muted);
+    padding: 4px;
+    border-radius: 4px;
+}
+.tabby-admin .tabby-pro-banner__dismiss:hover {
+    color: inherit;
+    background: rgba(127, 127, 127, .15);
+}
 
-    .tabby-repeater__hint code {
-        background: color-mix(in srgb, var(--tabby-accent) 14%, #1e1e22);
+/* Accent CTA buttons (override WP blue with the readable dark ochre). */
+.tabby-admin .tabby-pro-banner__cta.button-primary,
+.tabby-admin .tabby-pro-aside__cta.button-primary {
+    background: var(--tabby-accent-text);
+    border-color: var(--tabby-accent-hover);
+    color: #fff;
+    text-shadow: none;
+    box-shadow: none;
+}
+.tabby-admin .tabby-pro-banner__cta.button-primary:hover,
+.tabby-admin .tabby-pro-aside__cta.button-primary:hover {
+    background: var(--tabby-accent-hover);
+}
+
+/* Sidebar promo card (rendered only when a two-column layout calls aside()). */
+.tabby-admin .tabby-pro-aside {
+    background: var(--tabby-card-bg);
+    border: 1px solid var(--tabby-card-border);
+    border-top: 3px solid var(--tabby-accent);
+    border-radius: var(--tabby-card-radius);
+    box-shadow: var(--tabby-card-shadow);
+    padding: 18px 20px;
+}
+.tabby-admin .tabby-pro-aside__eyebrow {
+    margin: 0 0 4px;
+    color: var(--tabby-accent-text);
+}
+.tabby-admin .tabby-pro-aside__heading {
+    margin: 0 0 12px;
+    font-size: 16px;
+    line-height: 1.3;
+}
+.tabby-admin .tabby-pro-aside__list {
+    margin: 0 0 16px;
+    padding: 0;
+    list-style: none;
+}
+.tabby-admin .tabby-pro-aside__list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 5px 0;
+    font-size: 13px;
+}
+.tabby-admin .tabby-pro-aside__lock::before,
+.tabby-admin .tabby-pro-card__lock::before {
+    content: "\f160";
+    font-family: dashicons;
+    font-size: 15px;
+    line-height: 1.2;
+    color: var(--tabby-accent);
+}
+.tabby-admin .tabby-pro-aside__cta {
+    width: 100%;
+    text-align: center;
+}
+.tabby-admin .tabby-pro-aside__price {
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: var(--tabby-muted);
+    text-align: center;
+}
+
+/* "What PRO adds" locked cards */
+.tabby-admin .tabby-pro-cards {
+    margin-block: var(--tabby-gap) 0;
+}
+.tabby-admin .tabby-pro-cards__title {
+    font-size: 15px;
+    margin: 0 0 12px;
+}
+.tabby-admin .tabby-pro-cards__grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+.tabby-admin .tabby-pro-card {
+    position: relative;
+    padding: 16px;
+    border: 1px solid var(--tabby-card-border);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--tabby-accent) 3%, var(--tabby-card-bg));
+}
+.tabby-admin .tabby-pro-card__badge {
+    position: absolute;
+    top: 12px;
+    inset-inline-end: 12px;
+    padding: 1px 7px;
+    border-radius: 999px;
+    color: var(--tabby-accent-text);
+    border: 1px solid color-mix(in srgb, var(--tabby-accent) 40%, var(--tabby-card-bg));
+}
+.tabby-admin .tabby-pro-card__lock {
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.tabby-admin .tabby-pro-card__title {
+    margin: 0 0 6px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+.tabby-admin .tabby-pro-card__desc {
+    margin: 0;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--tabby-muted);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .tabby-admin .tabby-pro-banner__cta,
+    .tabby-admin .tabby-pro-aside__cta {
+        transition: background-color .15s ease, border-color .15s ease;
     }
 }
 
+/* Dark-mode pass (admin colour scheme + system preference). */
 @media (prefers-reduced-motion: reduce) {
     .tabby-admin * {
         transition: none !important;
