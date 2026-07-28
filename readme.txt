@@ -1,10 +1,10 @@
-=== Plogins Tabby - Product Tabs for WooCommerce ===
+=== Tabby - Product Tabs for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 0.1.2
+Stable tag: 1.0.5
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -79,7 +79,23 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 Tabby does not connect to any external services. It makes no remote API calls, loads no fonts, scripts or styles from a third party, and sends no data off your site. Your tab definitions are stored locally in a single WordPress option (`tabby_settings`), with a version marker in `tabby_db_version`, and both are removed on uninstall. The admin and front-end CSS and JavaScript it loads are bundled with the plugin and served from your own site.
 
+== Translations ==
+
+Plogins Tabby includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-tabby`, so WordPress.org language packs can also override or extend these bundled translations.
+
 == Changelog ==
+
+= 1.0.4 =
+* Translations: completed Polish, German and Spanish for the PRO upgrade panel.
+
+= 1.0.3 =
+* Fixed low-contrast admin headings under an OS dark-mode preference.
+
+= 1.0.2 =
+* Added bundled Polish, German and Spanish translations for the plugin interface.
+
+= 1.0.1 =
+* First stable release.
 
 = 0.1.2 =
 * Renamed to Plogins Tabby for WooCommerce for a more distinctive plugin name.
