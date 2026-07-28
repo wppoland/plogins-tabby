@@ -13,11 +13,11 @@ Füge jeder WooCommerce-Produktseite neben den nativen Tabs wiederverwendbare ei
 
 == Description ==
 
-Mit Tabby kannst du der WooCommerce-Einzelproduktseite deine eigenen wiederverwendbaren Tabs hinzufügen – neben den nativen Tabs „Beschreibung“, „Weitere Informationen“ und „Bewertungen“.
+Mit Tabby kannst du der WooCommerce-Einzelproduktseite deine eigenen wiederverwendbaren Tabs hinzufügen, neben den nativen Tabs „Beschreibung“, „Weitere Informationen“ und „Bewertungen“.
 
 Definiere deine Tabs einmal unter <strong>WooCommerce → Tabby Tabs</strong> und sie erscheinen bei jedem Produkt. Das passt zu Inhalten, die du sonst von Hand in jedes Produkt einfügen würdest: Versand und Rücksendungen, Größentabellen, Pflegehinweise, Garantiehinweise.
 
-Jeder Tab besteht aus einem Titel und einem Inhaltsfeld, das dasselbe eingeschränkte HTML akzeptiert, das WordPress in Beiträgen erlaubt (Links, Listen, Fettdruck, Überschriften) – über `wp_kses_post`. Deine Tabs werden nach den nativen WooCommerce-Tabs gerendert, und du kannst jeden einzelnen ein- oder ausschalten, ohne ihn zu löschen.
+Jeder Tab besteht aus einem Titel und einem Inhaltsfeld, das dasselbe eingeschränkte HTML akzeptiert, das WordPress in Beiträgen erlaubt (Links, Listen, Fettdruck, Überschriften), über `wp_kses_post`. Deine Tabs werden nach den nativen WooCommerce-Tabs gerendert, und du kannst jeden einzelnen ein- oder ausschalten, ohne ihn zu löschen.
 
 Der Code liegt unter https://github.com/wppoland/plogins-tabby, falls du ihn lesen, einen Fehler melden oder eine Tab-Funktion vorschlagen möchtest.
 
@@ -25,14 +25,14 @@ Der Code liegt unter https://github.com/wppoland/plogins-tabby, falls du ihn les
 
 * <strong>Dokumentation</strong> - https://plogins.com/de/plogins-tabby/docs/
 * <strong>Plugin-Seite</strong> - https://plogins.com/de/plogins-tabby/
-* <strong>Quellcode</strong> – https://github.com/wppoland/plogins-tabby
-* <strong>Fehlerberichte und Funktionswünsche</strong> – https://github.com/wppoland/plogins-tabby/issues
+* <strong>Quellcode</strong>, https://github.com/wppoland/plogins-tabby
+* <strong>Fehlerberichte und Funktionswünsche</strong>, https://github.com/wppoland/plogins-tabby/issues
 
 
 = What it does =
 
-* Fügt deine wiederverwendbaren Tabs zu jeder einzelnen Produktseite hinzu – nach Beschreibung, Weiteren Informationen und Bewertungen.
-* Speichert Tab-Inhalte als mit `wp_kses_post` bereinigtes HTML – sowohl beim Speichern als auch bei der Ausgabe.
+* Fügt deine wiederverwendbaren Tabs zu jeder einzelnen Produktseite hinzu, nach Beschreibung, Weiteren Informationen und Bewertungen.
+* Speichert Tab-Inhalte als mit `wp_kses_post` bereinigtes HTML, sowohl beim Speichern als auch bei der Ausgabe.
 * Bindet den Standard-Filter `woocommerce_product_tabs` mit später Priorität ein, sodass native Tabs und Tabs von Drittanbietern ihren Platz behalten.
 * Der Admin-Bildschirm folgt dem Core-WordPress-Stil und respektiert die Hell-/Dunkel-Einstellung des Editors.
 * Ein deaktivierter Tab oder ein Tab ohne Inhalt wird einfach nicht gerendert.
@@ -77,7 +77,7 @@ Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es netzwerkw
 
 == External Services ==
 
-Tabby stellt keine Verbindung zu externen Diensten her. Es führt keine Remote-API-Aufrufe aus, lädt keine Schriftarten, Skripte oder Styles von Dritten und sendet keine Daten von deiner Website weg. Deine Tab-Definitionen werden lokal in einer einzigen WordPress-Option (`tabby_settings`) mit einer Versionsmarkierung in `tabby_db_version` gespeichert – beide werden bei der Deinstallation entfernt. Das Admin- und Frontend-CSS und -JavaScript, das es lädt, sind im Plugin gebündelt und werden von deiner eigenen Website ausgeliefert.
+Tabby stellt keine Verbindung zu externen Diensten her. Es führt keine Remote-API-Aufrufe aus, lädt keine Schriftarten, Skripte oder Styles von Dritten und sendet keine Daten von deiner Website weg. Deine Tab-Definitionen werden lokal in einer einzigen WordPress-Option (`tabby_settings`) mit einer Versionsmarkierung in `tabby_db_version` gespeichert, beide werden bei der Deinstallation entfernt. Das Admin- und Frontend-CSS und -JavaScript, das es lädt, sind im Plugin gebündelt und werden von deiner eigenen Website ausgeliefert.
 
 == Translations ==
 

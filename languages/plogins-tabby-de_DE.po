@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: tabby.php
 msgid "Tabby - Custom Product Tabs for WooCommerce"
-msgstr "Tabby – Benutzerdefinierte Produktregisterkarten für WooCommerce"
+msgstr "Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce"
 
 #. Plugin URI of the plugin
 #: tabby.php
@@ -45,7 +45,7 @@ msgstr "https://plogins.com/"
 
 #: src/Admin/Settings.php:57
 msgid "Tabby - Custom Product Tabs"
-msgstr "Tabby – Benutzerdefinierte Produktregisterkarten"
+msgstr "Tabby, Benutzerdefinierte Produktregisterkarten"
 
 #: src/Admin/Settings.php:58
 msgid "Tabby Tabs"
@@ -148,7 +148,7 @@ msgid ""
 "Tabby - Custom Product Tabs for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Für Tabby – Benutzerdefinierte Produktregisterkarten für WooCommerce muss "
+"Für Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce muss "
 "WooCommerce aktiv sein."
 
 #: src/Admin/ProUpsell.php:78

@@ -17,7 +17,7 @@ Tabby umożliwia dodawanie własnych zakładek wielokrotnego użytku do strony p
 
 Zdefiniuj swoje zakładki raz w <strong>WooCommerce → Tabby Tabs</strong>, a pojawią się przy każdym produkcie. Sprawdza się przy treściach, które inaczej wklejałbyś ręcznie do każdego produktu: wysyłka i zwroty, tabele rozmiarów, instrukcje pielęgnacji, informacje o gwarancji.
 
-Każda zakładka to tytuł oraz pole treści, które przyjmuje ten sam ograniczony zestaw HTML, na jaki WordPress pozwala we wpisach (linki, listy, pogrubienie, nagłówki) — poprzez `wp_kses_post`. Twoje zakładki renderują się po natywnych zakładkach WooCommerce i możesz włączać lub wyłączać każdą z nich bez usuwania.
+Każda zakładka to tytuł oraz pole treści, które przyjmuje ten sam ograniczony zestaw HTML, na jaki WordPress pozwala we wpisach (linki, listy, pogrubienie, nagłówki), poprzez `wp_kses_post`. Twoje zakładki renderują się po natywnych zakładkach WooCommerce i możesz włączać lub wyłączać każdą z nich bez usuwania.
 
 Kod jest dostępny pod adresem https://github.com/wppoland/plogins-tabby, jeśli chcesz go przejrzeć, zgłosić błąd lub zaproponować funkcję zakładek.
 
@@ -77,7 +77,7 @@ Tak. Ta wtyczka jest kompatybilna z WordPress Multisite. Włącz ją dla całej 
 
 == External Services ==
 
-Tabby nie łączy się z żadnymi usługami zewnętrznymi. Nie wykonuje zdalnych wywołań API, nie ładuje czcionek, skryptów ani stylów od podmiotów trzecich i nie wysyła żadnych danych poza Twoją witrynę. Twoje definicje zakładek są przechowywane lokalnie w jednej opcji WordPressa (`tabby_settings`), ze znacznikiem wersji w `tabby_db_version` — oba są usuwane przy odinstalowaniu. Ładowane przez wtyczkę CSS i JavaScript panelu oraz front-endu są dołączone do wtyczki i serwowane z Twojej własnej witryny.
+Tabby nie łączy się z żadnymi usługami zewnętrznymi. Nie wykonuje zdalnych wywołań API, nie ładuje czcionek, skryptów ani stylów od podmiotów trzecich i nie wysyła żadnych danych poza Twoją witrynę. Twoje definicje zakładek są przechowywane lokalnie w jednej opcji WordPressa (`tabby_settings`), ze znacznikiem wersji w `tabby_db_version`, oba są usuwane przy odinstalowaniu. Ładowane przez wtyczkę CSS i JavaScript panelu oraz front-endu są dołączone do wtyczki i serwowane z Twojej własnej witryny.
 
 == Translations ==
 

@@ -2,7 +2,7 @@
 /**
  * Autoloading: prefer Composer's optimized classmap when present. Fall back to a
  * minimal PSR-4 autoloader so the plugin still boots if vendor/ is somehow
- * absent. Tabby is self-contained — it has no runtime Composer dependencies.
+ * absent. Tabby is self-contained, it has no runtime Composer dependencies.
  *
  * @package Tabby
  */

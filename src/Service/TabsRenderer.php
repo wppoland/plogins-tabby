@@ -155,15 +155,15 @@ final class TabsRenderer implements HasHooks
      */
     private function formatPanelHtml(string $content, Tab $tab, ?\WC_Product $product): string
     {
-        // Filter: tabby/use_rich_tab_content — premium add-ons enable shortcode/block processing.
+        // Filter: tabby/use_rich_tab_content, premium add-ons enable shortcode/block processing.
         if ((bool) apply_filters('tabby/use_rich_tab_content', false, $tab, $product)) {
-            // Filter: tabby/tab_panel_html — rich tab panel HTML after the_content.
+            // Filter: tabby/tab_panel_html, rich tab panel HTML after the_content.
             return (string) apply_filters('tabby/tab_panel_html', apply_filters('the_content', $content), $tab, $product);
         }
 
         $html = wp_kses_post(wpautop($content));
 
-        // Filter: tabby/tab_panel_html — plain sanitised tab panel HTML.
+        // Filter: tabby/tab_panel_html, plain sanitised tab panel HTML.
         return (string) apply_filters('tabby/tab_panel_html', $html, $tab, $product);
     }
 }
