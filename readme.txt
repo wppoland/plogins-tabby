@@ -59,7 +59,7 @@ On the single product page tab list, after the native WooCommerce tabs (Descript
 
 = Can I reuse the same tab on many products? =
 
-Yes. Create reusable tabs once under WooCommerce → Tabby, then attach them per product.
+Yes. Tabs are created once under WooCommerce → Tabby and every enabled tab shows on every product, so one tab is reused across the whole catalogue by design. Choosing which products a tab appears on is not part of the free plugin.
 
 = Is tab HTML safe? =
 
