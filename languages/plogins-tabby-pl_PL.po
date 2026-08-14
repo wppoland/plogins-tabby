@@ -100,6 +100,14 @@ msgstr ""
 "tytułu jest usuwany podczas zapisywania, więc pozostaw pusty wiersz, aby go "
 "odrzucić."
 
+#: src/Admin/Settings.php:152
+msgid ""
+"A tab with an empty content box is kept for later but stays off the "
+"storefront, since an empty tab has nothing to show."
+msgstr ""
+"Zakładka z pustym polem treści zostaje zapisana na później, ale nie pojawia "
+"się w sklepie, ponieważ pusta zakładka nie ma nic do pokazania."
+
 #: src/Admin/Settings.php:160
 msgid "Add tab"
 msgstr "Dodaj zakładkę"

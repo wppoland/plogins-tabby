@@ -75,6 +75,14 @@ final class TabsRenderer implements HasHooks
         $seen     = [];
 
         foreach ($resolved as $tab) {
+            // A tab with an empty content box used to be registered anyway: the
+            // merchant saved a title with no body, and the shopper got a real
+            // clickable tab that opened onto a heading and nothing else. Content
+            // is what the panel is for, so a bodyless tab never reaches the strip.
+            if ('' === trim($tab->content)) {
+                continue;
+            }
+
             // Guarantee a unique array key even if two tabs share an id.
             $key = 'tabby_' . $tab->id;
             $n   = 1;
@@ -123,13 +131,6 @@ final class TabsRenderer implements HasHooks
             return;
         }
 
-        if ('' !== $resolved->title) {
-            printf(
-                '<h2 class="tabby-tab__title">%s</h2>',
-                esc_html($resolved->title),
-            );
-        }
-
         if ('' === trim($resolved->content)) {
             return;
         }
@@ -138,6 +139,16 @@ final class TabsRenderer implements HasHooks
 
         if ('' === trim(wp_strip_all_tags($html))) {
             return;
+        }
+
+        // The title is printed after the body checks, not before them: printing
+        // it first is what left shoppers looking at a lone heading whenever the
+        // content came back empty.
+        if ('' !== $resolved->title) {
+            printf(
+                '<h2 class="tabby-tab__title">%s</h2>',
+                esc_html($resolved->title),
+            );
         }
 
         printf(
