@@ -4,7 +4,7 @@ Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -84,6 +84,10 @@ Tabby does not connect to any external services. It makes no remote API calls, l
 Plogins Tabby includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-tabby`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.6 =
+* A tab with an empty content box no longer shows on the product page, so shoppers never open a tab that holds nothing but its heading.
+* The settings screen now says that such a tab is kept for later but stays off the storefront.
 
 = 1.0.4 =
 * Translations: completed Polish, German and Spanish for the PRO upgrade panel.

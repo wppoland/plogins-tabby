@@ -99,6 +99,15 @@ msgstr ""
 "nativas de WooCommerce, en el orden que se indica aquí. Una fila sin título "
 "se elimina al guardar, así que deje una fila en blanco para descartarla."
 
+#: src/Admin/Settings.php:152
+msgid ""
+"A tab with an empty content box is kept for later but stays off the "
+"storefront, since an empty tab has nothing to show."
+msgstr ""
+"Una pestaña con la caja de contenido vacía se guarda para más adelante, pero "
+"no se muestra en la tienda, ya que una pestaña vacía no tiene nada que "
+"mostrar."
+
 #: src/Admin/Settings.php:160
 msgid "Add tab"
 msgstr "Añadir pestaña"

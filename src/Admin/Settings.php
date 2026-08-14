@@ -146,7 +146,11 @@ final class Settings implements HasHooks
 
                 <div class="tabby-admin__section">
                     <h2><?php esc_html_e('Tabs', 'plogins-tabby'); ?></h2>
-                    <p class="tabby-admin__section-intro"><?php esc_html_e('Each tab shows on every product page, below the native WooCommerce tabs, in the order listed here. A row with no title is dropped when you save, so leave a blank row to discard it.', 'plogins-tabby'); ?></p>
+                    <p class="tabby-admin__section-intro">
+                        <?php esc_html_e('Each tab shows on every product page, below the native WooCommerce tabs, in the order listed here. A row with no title is dropped when you save, so leave a blank row to discard it.', 'plogins-tabby'); ?>
+                        <?php // Say it here, because a title-only row is saved and then never seen: the shopper only gets a tab when there is something in it. ?>
+                        <?php esc_html_e('A tab with an empty content box is kept for later but stays off the storefront, since an empty tab has nothing to show.', 'plogins-tabby'); ?>
+                    </p>
 
                     <div class="tabby-repeater" data-tabby-repeater>
                         <div class="tabby-repeater__rows" data-tabby-rows>
