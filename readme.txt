@@ -19,14 +19,14 @@ Define your tabs once under **WooCommerce → Tabby Tabs** and they show up on e
 
 Each tab is a title plus a content box that accepts the same limited HTML WordPress allows in posts (links, lists, bold, headings) via `wp_kses_post`. Your tabs render after the native WooCommerce tabs, and you can toggle each one on or off without deleting it.
 
-The code lives at https://github.com/wppoland/plogins-tabby if you want to read it, report a bug or suggest a tab feature.
+The code lives at [github.com/wppoland/plogins-tabby](https://github.com/wppoland/plogins-tabby) if you want to read it, report a bug or suggest a tab feature.
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-tabby/docs/
-* **Plugin page** - https://plogins.com/plogins-tabby/
-* **Source code** - https://github.com/wppoland/plogins-tabby
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-tabby/issues
+* **Documentation**: [plogins.com/plogins-tabby/docs/](https://plogins.com/plogins-tabby/docs/)
+* **Plugin page**: [plogins.com/plogins-tabby/](https://plogins.com/plogins-tabby/)
+* **Source code**: [github.com/wppoland/plogins-tabby](https://github.com/wppoland/plogins-tabby)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-tabby/issues](https://github.com/wppoland/plogins-tabby/issues)
 
 
 = What it does =
