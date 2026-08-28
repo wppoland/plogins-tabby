@@ -3,7 +3,7 @@
  * Plugin Name:       Tabby - Product Tabs for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-tabby/
  * Description:        Add custom tabs with your own content to WooCommerce product pages.
- * Version:           1.0.6
+ * Version:           1.0.7
  * Requires at least: 6.5
  * Tested up to:      7.0
  * Requires PHP:      8.1
