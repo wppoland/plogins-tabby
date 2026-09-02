@@ -81,7 +81,7 @@ Tabby does not connect to any external services. It makes no remote API calls, l
 
 == Translations ==
 
-Plogins Tabby includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-tabby`, so WordPress.org language packs can also override or extend these bundled translations.
+Plogins Tabby is fully translatable and ships the `plogins-tabby.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
 
