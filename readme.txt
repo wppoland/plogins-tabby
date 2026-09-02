@@ -34,7 +34,7 @@ The code lives at [github.com/wppoland/plogins-tabby](https://github.com/wppolan
 * Adds your reusable tabs to every single product page, after Description, Additional information and Reviews.
 * Stores tab content as `wp_kses_post`-sanitised HTML, both on save and again on output.
 * Hooks the standard `woocommerce_product_tabs` filter at a late priority, so native and third-party tabs keep their place.
-* Admin screen follows core WordPress styling and respects the editor's light/dark preference.
+* Admin screen follows core WordPress styling.
 * A disabled tab, or one with no content, simply isn't rendered.
 
 == Installation ==
