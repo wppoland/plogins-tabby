@@ -16,6 +16,7 @@ defined('ABSPATH') || exit;
 
 return [
     'enabled' => true,
+    'rich_content' => false,
 
     /*
      * Reusable global tabs. Each entry:

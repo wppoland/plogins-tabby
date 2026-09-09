@@ -140,6 +140,25 @@ final class Settings implements HasHooks
                                     </p>
                                 </td>
                             </tr>
+                            <tr>
+                                <th scope="row"><?php esc_html_e('Shortcodes and blocks in tabs', 'plogins-tabby'); ?></th>
+                                <td>
+                                    <label for="tabby_rich_content">
+                                        <input
+                                            type="checkbox"
+                                            id="tabby_rich_content"
+                                            name="<?php echo esc_attr(self::OPTION); ?>[rich_content]"
+                                            value="1"
+                                            aria-describedby="tabby_rich_content_help"
+                                            <?php checked((bool) ($settings['rich_content'] ?? false), true); ?>
+                                        />
+                                        <?php esc_html_e('Run tab content through the normal WordPress content filters.', 'plogins-tabby'); ?>
+                                    </label>
+                                    <p class="description" id="tabby_rich_content_help">
+                                        <?php esc_html_e('Lets a tab body use shortcodes and blocks. Off by default, because it is a wider surface than the safe-HTML pass used otherwise. Only the tabs you wrote yourself are affected.', 'plogins-tabby'); ?>
+                                    </p>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -280,6 +299,7 @@ final class Settings implements HasHooks
 
         return array_merge($defaults, [
             'enabled'     => ! empty($raw['enabled']),
+            'rich_content' => ! empty($raw['rich_content']),
             'global_tabs' => $globalTabs,
         ]);
     }
