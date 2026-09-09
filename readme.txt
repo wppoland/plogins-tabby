@@ -4,7 +4,7 @@ Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.11
+Stable tag: 1.0.12
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -84,6 +84,9 @@ Tabby does not connect to any external services. It makes no remote API calls, l
 Plogins Tabby is fully translatable and ships the `plogins-tabby.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.12 =
+* New: **Shortcodes and blocks in tabs**, a setting on the Tabby screen. The plugin could always run a tab body through the normal WordPress content filters, but that path was held shut by a hardcoded value only the paid add-on ever flipped, which makes it a built-in feature the plugin refused to run. It is a setting now, off by default because it is a wider surface than the safe-HTML pass used otherwise.
 
 = 1.0.11 =
 * The translation template was regenerated. It still named an older version of the plugin and pointed at source lines that had since moved, which is what translation tools read to show a string in context.

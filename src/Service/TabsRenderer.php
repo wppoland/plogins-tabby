@@ -166,8 +166,13 @@ final class TabsRenderer implements HasHooks
      */
     private function formatPanelHtml(string $content, Tab $tab, ?\WC_Product $product): string
     {
-        // Filter: tabby/use_rich_tab_content, premium add-ons enable shortcode/block processing.
-        if ((bool) apply_filters('tabby/use_rich_tab_content', false, $tab, $product)) {
+        // Shortcodes and blocks inside a tab body. The merchant's own setting
+        // is the default: this used to be a hardcoded false that only the paid
+        // add-on ever flipped, which made it a built-in feature the plugin
+        // refused to run. Off out of the box because running the_content over
+        // stored HTML is a bigger surface than wp_kses_post.
+        $rich = (bool) ($this->tabs->settings()['rich_content'] ?? false);
+        if ((bool) apply_filters('tabby/use_rich_tab_content', $rich, $tab, $product)) {
             // Filter: tabby/tab_panel_html, rich tab panel HTML after the_content.
             return (string) apply_filters('tabby/tab_panel_html', apply_filters('the_content', $content), $tab, $product);
         }
