@@ -93,9 +93,10 @@ final class Settings implements HasHooks
             return;
         }
 
-        $repo       = new TabRepository();
-        $settings   = $repo->settings();
-        $globalTabs = $repo->globalTabs();
+        $repo         = new TabRepository();
+        $settings     = $repo->settings();
+        $globalTabs   = $repo->globalTabs();
+        $richContent  = (bool) ($settings['rich_content'] ?? false);
         ?>
         <div class="wrap tabby-admin">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
@@ -150,12 +151,14 @@ final class Settings implements HasHooks
                                             name="<?php echo esc_attr(self::OPTION); ?>[rich_content]"
                                             value="1"
                                             aria-describedby="tabby_rich_content_help"
+                                            data-tabby-rich-toggle
                                             <?php checked((bool) ($settings['rich_content'] ?? false), true); ?>
                                         />
                                         <?php esc_html_e('Run tab content through the normal WordPress content filters.', 'plogins-tabby'); ?>
                                     </label>
                                     <p class="description" id="tabby_rich_content_help">
                                         <?php esc_html_e('Lets a tab body use shortcodes and blocks. Off by default, because it is a wider surface than the safe-HTML pass used otherwise. Only the tabs you wrote yourself are affected.', 'plogins-tabby'); ?>
+                                        <?php esc_html_e('It applies to every tab below, not to one of them, so each tab says which pass it gets.', 'plogins-tabby'); ?>
                                     </p>
                                 </td>
                             </tr>
@@ -175,17 +178,17 @@ final class Settings implements HasHooks
                         <div class="tabby-repeater__rows" data-tabby-rows>
                             <?php
                             if ([] === $globalTabs) {
-                                $this->renderGlobalRow(0, '', '', true);
+                                $this->renderGlobalRow(0, '', '', true, $richContent);
                             } else {
                                 foreach (array_values($globalTabs) as $index => $tab) {
-                                    $this->renderGlobalRow((int) $index, $tab->title, $tab->content, $tab->enabled);
+                                    $this->renderGlobalRow((int) $index, $tab->title, $tab->content, $tab->enabled, $richContent);
                                 }
                             }
                             ?>
                         </div>
 
                         <template data-tabby-template>
-                            <?php $this->renderGlobalRow(0, '', '', true, true); ?>
+                            <?php $this->renderGlobalRow(0, '', '', true, $richContent, true); ?>
                         </template>
 
                         <p>
@@ -207,7 +210,7 @@ final class Settings implements HasHooks
     /**
      * Render a single global-tab repeater row.
      */
-    private function renderGlobalRow(int $index, string $title, string $content, bool $enabled, bool $isTemplate = false): void
+    private function renderGlobalRow(int $index, string $title, string $content, bool $enabled, bool $richContent = false, bool $isTemplate = false): void
     {
         $i = $isTemplate ? '__index__' : (string) $index;
         $base = self::OPTION . '[global_tabs][' . $i . ']';
@@ -240,7 +243,21 @@ final class Settings implements HasHooks
                 </button>
             </div>
             <label class="tabby-repeater__field">
-                <span class="tabby-repeater__label"><?php esc_html_e('Tab content', 'plogins-tabby'); ?></span>
+                <span class="tabby-repeater__label">
+                    <?php esc_html_e('Tab content', 'plogins-tabby'); ?>
+                    <?php
+                    /*
+                     * "Shortcodes and blocks in tabs" is one switch that changes how
+                     * every one of these boxes is rendered on the storefront. That is
+                     * invisible from down here, so each box carries the current pass.
+                     * Server-rendered from the saved option, so it is right without
+                     * JavaScript; the script only keeps it in step before you save.
+                     */
+                    ?>
+                    <span class="tabby-repeater__pass" data-tabby-rich-note <?php echo $richContent ? '' : 'hidden'; ?>>
+                        <?php esc_html_e('shortcodes and blocks run here', 'plogins-tabby'); ?>
+                    </span>
+                </span>
                 <textarea
                     name="<?php echo esc_attr($base . '[content]'); ?>"
                     rows="4"
