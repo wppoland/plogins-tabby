@@ -4,7 +4,7 @@ Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.13
+Stable tag: 1.0.14
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -84,6 +84,9 @@ Tabby does not connect to any external services. It makes no remote API calls, l
 Plogins Tabby is fully translatable and ships the `plogins-tabby.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.14 =
+* Fixed: deleting the plugin left the per-user "dismiss" flag from the PRO notice in the database. Uninstall now removes it for every user, not just the one who dismissed it.
 
 = 1.0.13 =
 * Changed: **Shortcodes and blocks in tabs** now shows what it reaches. It is a single switch that changes how every tab body below is rendered, which was invisible from inside a tab, so each tab content box now carries a badge while the switch is on. The badge is rendered from the saved settings, so it is correct with JavaScript switched off, and it follows a tab you add before saving.
