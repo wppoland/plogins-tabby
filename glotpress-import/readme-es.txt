@@ -15,7 +15,7 @@ Añade pestañas personalizadas reutilizables con tu propio contenido a cada pá
 
 Tabby te permite añadir tus propias pestañas reutilizables a la página de producto individual de WooCommerce, junto con las pestañas nativas Descripción, Información adicional y Reseñas.
 
-Define tus pestañas una vez en <strong>WooCommerce → Tabby Tabs</strong> y aparecerán en todos los productos. Se adapta al contenido que, si no, pegarías a mano en cada producto: envíos y devoluciones, guías de tallas, instrucciones de cuidado, notas de garantía.
+Define tus pestañas una vez en <strong>WooCommerce > Tabby Tabs</strong> y aparecerán en todos los productos. Se adapta al contenido que, si no, pegarías a mano en cada producto: envíos y devoluciones, guías de tallas, instrucciones de cuidado, notas de garantía.
 
 Cada pestaña es un título más un cuadro de contenido que acepta el mismo HTML limitado que WordPress permite en las entradas (enlaces, listas, negrita, encabezados) mediante `wp_kses_post`. Tus pestañas se muestran después de las pestañas nativas de WooCommerce, y puedes activar o desactivar cada una sin eliminarla.
 
@@ -39,9 +39,9 @@ El código está en https://github.com/wppoland/plogins-tabby por si quieres lee
 
 == Installation ==
 
-1. Sube el plugin a `/wp-content/plugins/tabby` o instálalo desde Plugins → Añadir nuevo.
+1. Sube el plugin a `/wp-content/plugins/tabby` o instálalo desde Plugins > Añadir nuevo.
 2. Actívalo. WooCommerce debe estar activo.
-3. Ve a <strong>WooCommerce → Tabby Tabs</strong> para añadir tus pestañas.
+3. Ve a <strong>WooCommerce > Tabby Tabs</strong> para añadir tus pestañas.
 
 == Frequently Asked Questions ==
 
@@ -59,7 +59,7 @@ En la lista de pestañas de la página de producto individual, después de las p
 
 = Can I reuse the same tab on many products? =
 
-Sí. Crea pestañas reutilizables una vez en WooCommerce → Tabby y luego adjúntalas a cada producto.
+Sí. Crea pestañas reutilizables una vez en WooCommerce > Tabby y luego adjúntalas a cada producto.
 
 = Is tab HTML safe? =
 
