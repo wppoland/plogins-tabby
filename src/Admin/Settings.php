@@ -10,7 +10,7 @@ use Tabby\Domain\TabRepository;
 defined('ABSPATH') || exit;
 
 /**
- * Tabby settings screen, registered as a WooCommerce submenu.
+ * Langeto settings screen, registered as a WooCommerce submenu.
  *
  * Manages the reusable global tabs (title + safe HTML content + enabled) stored
  * in the `tabby_settings` option. All output escaped; all input sanitised on
@@ -62,8 +62,8 @@ final class Settings implements HasHooks
     {
         add_submenu_page(
             'woocommerce',
-            __('Tabby - Custom Product Tabs', 'plogins-tabby'),
-            __('Tabby Tabs', 'plogins-tabby'),
+            __('Langeto - Product Tabs', 'langeto'),
+            __('Langeto Tabs', 'langeto'),
             'manage_woocommerce',
             self::PAGE,
             [$this, 'renderPage'],
@@ -110,8 +110,8 @@ final class Settings implements HasHooks
                     </svg>
                 </span>
                 <div class="tabby-admin__intro-text">
-                    <h2><?php esc_html_e('Reusable tabs for every product page', 'plogins-tabby'); ?></h2>
-                    <p><?php esc_html_e('Define tabs once and they appear on all single product pages, after the native WooCommerce tabs. Basic HTML is allowed in tab content.', 'plogins-tabby'); ?></p>
+                    <h2><?php esc_html_e('Reusable tabs for every product page', 'langeto'); ?></h2>
+                    <p><?php esc_html_e('Define tabs once and they appear on all single product pages, after the native WooCommerce tabs. Basic HTML is allowed in tab content.', 'langeto'); ?></p>
                 </div>
             </div>
 
@@ -119,11 +119,11 @@ final class Settings implements HasHooks
                 <?php settings_fields(self::PAGE); ?>
 
                 <div class="tabby-admin__section">
-                    <h2><?php esc_html_e('General', 'plogins-tabby'); ?></h2>
+                    <h2><?php esc_html_e('General', 'langeto'); ?></h2>
                     <table class="form-table" role="presentation">
                         <tbody>
                             <tr>
-                                <th scope="row"><?php esc_html_e('Enable Tabby', 'plogins-tabby'); ?></th>
+                                <th scope="row"><?php esc_html_e('Enable Langeto', 'langeto'); ?></th>
                                 <td>
                                     <label for="tabby_enabled">
                                         <input
@@ -134,15 +134,15 @@ final class Settings implements HasHooks
                                             aria-describedby="tabby_enabled_help"
                                             <?php checked((bool) ($settings['enabled'] ?? false), true); ?>
                                         />
-                                        <?php esc_html_e('Render custom tabs on single product pages.', 'plogins-tabby'); ?>
+                                        <?php esc_html_e('Render custom tabs on single product pages.', 'langeto'); ?>
                                     </label>
                                     <p class="description" id="tabby_enabled_help">
-                                        <?php esc_html_e('Master switch. Turn this off to hide every tab below at once without deleting them, your tabs stay saved and reappear when you turn it back on.', 'plogins-tabby'); ?>
+                                        <?php esc_html_e('Master switch. Turn this off to hide every tab below at once without deleting them, your tabs stay saved and reappear when you turn it back on.', 'langeto'); ?>
                                     </p>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><?php esc_html_e('Shortcodes and blocks in tabs', 'plogins-tabby'); ?></th>
+                                <th scope="row"><?php esc_html_e('Shortcodes and blocks in tabs', 'langeto'); ?></th>
                                 <td>
                                     <label for="tabby_rich_content">
                                         <input
@@ -154,11 +154,11 @@ final class Settings implements HasHooks
                                             data-tabby-rich-toggle
                                             <?php checked((bool) ($settings['rich_content'] ?? false), true); ?>
                                         />
-                                        <?php esc_html_e('Run tab content through the normal WordPress content filters.', 'plogins-tabby'); ?>
+                                        <?php esc_html_e('Run tab content through the normal WordPress content filters.', 'langeto'); ?>
                                     </label>
                                     <p class="description" id="tabby_rich_content_help">
-                                        <?php esc_html_e('Lets a tab body use shortcodes and blocks. Off by default, because it is a wider surface than the safe-HTML pass used otherwise. Only the tabs you wrote yourself are affected.', 'plogins-tabby'); ?>
-                                        <?php esc_html_e('It applies to every tab below, not to one of them, so each tab says which pass it gets.', 'plogins-tabby'); ?>
+                                        <?php esc_html_e('Lets a tab body use shortcodes and blocks. Off by default, because it is a wider surface than the safe-HTML pass used otherwise. Only the tabs you wrote yourself are affected.', 'langeto'); ?>
+                                        <?php esc_html_e('It applies to every tab below, not to one of them, so each tab says which pass it gets.', 'langeto'); ?>
                                     </p>
                                 </td>
                             </tr>
@@ -167,11 +167,11 @@ final class Settings implements HasHooks
                 </div>
 
                 <div class="tabby-admin__section">
-                    <h2><?php esc_html_e('Tabs', 'plogins-tabby'); ?></h2>
+                    <h2><?php esc_html_e('Tabs', 'langeto'); ?></h2>
                     <p class="tabby-admin__section-intro">
-                        <?php esc_html_e('Each tab shows on every product page, below the native WooCommerce tabs, in the order listed here. A row with no title is dropped when you save, so leave a blank row to discard it.', 'plogins-tabby'); ?>
+                        <?php esc_html_e('Each tab shows on every product page, below the native WooCommerce tabs, in the order listed here. A row with no title is dropped when you save, so leave a blank row to discard it.', 'langeto'); ?>
                         <?php // Say it here, because a title-only row is saved and then never seen: the shopper only gets a tab when there is something in it. ?>
-                        <?php esc_html_e('A tab with an empty content box is kept for later but stays off the storefront, since an empty tab has nothing to show.', 'plogins-tabby'); ?>
+                        <?php esc_html_e('A tab with an empty content box is kept for later but stays off the storefront, since an empty tab has nothing to show.', 'langeto'); ?>
                     </p>
 
                     <div class="tabby-repeater" data-tabby-repeater>
@@ -193,7 +193,7 @@ final class Settings implements HasHooks
 
                         <p>
                             <button type="button" class="button button-secondary" data-tabby-add>
-                                <?php esc_html_e('Add tab', 'plogins-tabby'); ?>
+                                <?php esc_html_e('Add tab', 'langeto'); ?>
                             </button>
                         </p>
                     </div>
@@ -218,13 +218,13 @@ final class Settings implements HasHooks
         <div class="tabby-repeater__row" data-tabby-row>
             <div class="tabby-repeater__head">
                 <label class="tabby-repeater__field tabby-repeater__field--title">
-                    <span class="tabby-repeater__label"><?php esc_html_e('Tab title', 'plogins-tabby'); ?></span>
+                    <span class="tabby-repeater__label"><?php esc_html_e('Tab title', 'langeto'); ?></span>
                     <input
                         type="text"
                         name="<?php echo esc_attr($base . '[title]'); ?>"
                         value="<?php echo esc_attr($title); ?>"
                         class="widefat"
-                        placeholder="<?php esc_attr_e('e.g. Shipping & Returns', 'plogins-tabby'); ?>"
+                        placeholder="<?php esc_attr_e('e.g. Shipping & Returns', 'langeto'); ?>"
                     />
                 </label>
                 <label class="tabby-repeater__toggle">
@@ -234,17 +234,17 @@ final class Settings implements HasHooks
                         value="1"
                         <?php checked($enabled, true); ?>
                     />
-                    <?php esc_html_e('Enabled', 'plogins-tabby'); ?>
-                    <span class="tabby-repeater__hint"><?php esc_html_e('shows this tab on the storefront; uncheck to hide just this one', 'plogins-tabby'); ?></span>
+                    <?php esc_html_e('Enabled', 'langeto'); ?>
+                    <span class="tabby-repeater__hint"><?php esc_html_e('shows this tab on the storefront; uncheck to hide just this one', 'langeto'); ?></span>
                 </label>
                 <button type="button" class="button-link tabby-repeater__remove" data-tabby-remove>
                     <span aria-hidden="true">&times;</span>
-                    <span class="screen-reader-text"><?php esc_html_e('Remove this tab', 'plogins-tabby'); ?></span>
+                    <span class="screen-reader-text"><?php esc_html_e('Remove this tab', 'langeto'); ?></span>
                 </button>
             </div>
             <label class="tabby-repeater__field">
                 <span class="tabby-repeater__label">
-                    <?php esc_html_e('Tab content', 'plogins-tabby'); ?>
+                    <?php esc_html_e('Tab content', 'langeto'); ?>
                     <?php
                     /*
                      * "Shortcodes and blocks in tabs" is one switch that changes how
@@ -255,20 +255,20 @@ final class Settings implements HasHooks
                      */
                     ?>
                     <span class="tabby-repeater__pass" data-tabby-rich-note <?php echo $richContent ? '' : 'hidden'; ?>>
-                        <?php esc_html_e('shortcodes and blocks run here', 'plogins-tabby'); ?>
+                        <?php esc_html_e('shortcodes and blocks run here', 'langeto'); ?>
                     </span>
                 </span>
                 <textarea
                     name="<?php echo esc_attr($base . '[content]'); ?>"
                     rows="4"
                     class="widefat"
-                    placeholder="<?php esc_attr_e('Basic HTML is allowed (links, lists, bold, etc.).', 'plogins-tabby'); ?>"
+                    placeholder="<?php esc_attr_e('Basic HTML is allowed (links, lists, bold, etc.).', 'langeto'); ?>"
                 ><?php echo esc_textarea($content); ?></textarea>
                 <span class="tabby-repeater__hint">
                     <?php
                     printf(
                         /* translators: %s: an example HTML snippet shown as inline guidance. */
-                        esc_html__('Same HTML as a post, e.g. %s. Scripts and unsafe tags are stripped on save.', 'plogins-tabby'),
+                        esc_html__('Same HTML as a post, e.g. %s. Scripts and unsafe tags are stripped on save.', 'langeto'),
                         '<code>&lt;strong&gt;Ships in 24h&lt;/strong&gt; &lt;a href="…"&gt;Size guide&lt;/a&gt;</code>'
                     );
                     ?>

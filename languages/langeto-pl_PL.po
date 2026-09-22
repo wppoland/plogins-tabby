@@ -5,33 +5,33 @@ msgstr ""
 "Project-Id-Version: Tabby - Custom Product Tabs for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tabby\n"
 "POT-Creation-Date: 2026-06-16T20:23:22+00:00\n"
-"PO-Revision-Date: 2026-06-16T20:23:22+00:00\n"
+"PO-Revision-Date: 2026-06-15 12:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
-"Language-Team: Spanish <es@li.org>\n"
-"Language: es_ES\n"
+"Language-Team: Polish <pl@li.org>\n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: plogins-tabby\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"X-Domain: langeto\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: tabby.php
 msgid "Tabby - Custom Product Tabs for WooCommerce"
-msgstr "Tabby - Pestañas de productos personalizados para WooCommerce"
+msgstr "Tabby - Własne zakładki produktów dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: tabby.php
 msgid "https://plogins.com/tabby/"
-msgstr "https://plogins.com/es/tabby/"
+msgstr "https://plogins.com/tabby/"
 
 #. Description of the plugin
 #: tabby.php
 msgid "Add custom tabs with your own content to WooCommerce product pages."
 msgstr ""
-"Añade pestañas personalizadas con su propio contenido a las páginas de "
-"productos de WooCommerce."
+"Dodawaj własne zakładki z własną treścią do stron produktów WooCommerce."
 
 #. Author of the plugin
 #: tabby.php
@@ -45,49 +45,49 @@ msgstr "https://plogins.com/"
 
 #: src/Admin/Settings.php:57
 msgid "Tabby - Custom Product Tabs"
-msgstr "Tabby - Pestañas de productos personalizados"
+msgstr "Tabby - Własne zakładki produktów"
 
 #: src/Admin/Settings.php:58
 msgid "Tabby Tabs"
-msgstr "Pestañas Tabby"
+msgstr "Zakładki Tabby"
 
 #: src/Admin/Settings.php:102
 msgid "Reusable tabs for every product page"
-msgstr "Pestañas reutilizables para cada página de producto"
+msgstr "Zakładki wielokrotnego użytku dla każdej strony produktu"
 
 #: src/Admin/Settings.php:103
 msgid ""
 "Define tabs once and they appear on all single product pages, after the "
 "native WooCommerce tabs. Basic HTML is allowed in tab content."
 msgstr ""
-"Defina las pestañas una vez y aparecerán en todas las páginas de productos "
-"individuales, después de las pestañas nativas de WooCommerce. Se permite "
-"HTML básico en el contenido de las pestañas."
+"Zdefiniuj zakładki raz, a pojawią się na wszystkich stronach pojedynczych "
+"produktów, za natywnymi zakładkami WooCommerce. W treści zakładek dozwolony "
+"jest podstawowy kod HTML."
 
 #: src/Admin/Settings.php:111
 msgid "General"
-msgstr "General"
+msgstr "Ogólne"
 
 #: src/Admin/Settings.php:115
 msgid "Enable Tabby"
-msgstr "Habilitar Tabby"
+msgstr "Włącz Tabby"
 
 #: src/Admin/Settings.php:126
 msgid "Render custom tabs on single product pages."
-msgstr "Representa pestañas personalizadas en páginas de un solo producto."
+msgstr "Renderuj własne zakładki na stronach pojedynczych produktów."
 
 #: src/Admin/Settings.php:129
 msgid ""
 "Master switch. Turn this off to hide every tab below at once without "
 "deleting them, your tabs stay saved and reappear when you turn it back on."
 msgstr ""
-"Interruptor maestro. Desactive esto para ocultar todas las pestañas "
-"siguientes a la vez sin eliminarlas; sus pestañas permanecen guardadas y "
-"reaparecen cuando lo vuelve a activar."
+"Przełącznik główny. Wyłącz tę opcję, aby ukryć wszystkie karty poniżej "
+"jednocześnie bez ich usuwania. Twoje karty pozostaną zapisane i pojawią się "
+"ponownie po ponownym włączeniu."
 
 #: src/Admin/Settings.php:138
 msgid "Tabs"
-msgstr "Pestañas"
+msgstr "Zakładki"
 
 #: src/Admin/Settings.php:139
 msgid ""
@@ -95,51 +95,50 @@ msgid ""
 "the order listed here. A row with no title is dropped when you save, so "
 "leave a blank row to discard it."
 msgstr ""
-"Cada pestaña se muestra en cada página de producto, debajo de las pestañas "
-"nativas de WooCommerce, en el orden que se indica aquí. Una fila sin título "
-"se elimina al guardar, así que deje una fila en blanco para descartarla."
+"Każda zakładka jest wyświetlana na każdej stronie produktu, poniżej "
+"natywnych zakładek WooCommerce, w podanej tutaj kolejności. Wiersz bez "
+"tytułu jest usuwany podczas zapisywania, więc pozostaw pusty wiersz, aby go "
+"odrzucić."
 
 #: src/Admin/Settings.php:152
 msgid ""
 "A tab with an empty content box is kept for later but stays off the "
 "storefront, since an empty tab has nothing to show."
 msgstr ""
-"Una pestaña con la caja de contenido vacía se guarda para más adelante, pero "
-"no se muestra en la tienda, ya que una pestaña vacía no tiene nada que "
-"mostrar."
+"Zakładka z pustym polem treści zostaje zapisana na później, ale nie pojawia "
+"się w sklepie, ponieważ pusta zakładka nie ma nic do pokazania."
 
 #: src/Admin/Settings.php:160
 msgid "Add tab"
-msgstr "Añadir pestaña"
+msgstr "Dodaj zakładkę"
 
 #: src/Admin/Settings.php:183
 msgid "Tab title"
-msgstr "Título de la pestaña"
+msgstr "Tytuł zakładki"
 
 #: src/Admin/Settings.php:189
 msgid "e.g. Shipping & Returns"
-msgstr "p.ej. Envíos y devoluciones"
+msgstr "np. Wysyłka i zwroty"
 
 #: src/Admin/Settings.php:199
 msgid "Enabled"
-msgstr "Habilitado"
+msgstr "Włączona"
 
 #: src/Admin/Settings.php:200
 msgid "shows this tab on the storefront; uncheck to hide just this one"
-msgstr ""
-"muestra esta pestaña en el escaparate; desmarque para ocultar solo este"
+msgstr "pokazuje tę zakładkę na stronie sklepu; odznacz, aby ukryć tylko ten"
 
 #: src/Admin/Settings.php:204
 msgid "Remove this tab"
-msgstr "Eliminar esta pestaña"
+msgstr "Usuń tę zakładkę"
 
 #: src/Admin/Settings.php:208
 msgid "Tab content"
-msgstr "Contenido de la pestaña"
+msgstr "Treść zakładki"
 
 #: src/Admin/Settings.php:213
 msgid "Basic HTML is allowed (links, lists, bold, etc.)."
-msgstr "Se permite HTML básico (enlaces, listas, negrita, etc.)."
+msgstr "Dozwolony jest podstawowy kod HTML (linki, listy, pogrubienie itp.)."
 
 #. translators: %s: an example HTML snippet shown as inline guidance.
 #: src/Admin/Settings.php:219
@@ -147,73 +146,78 @@ msgstr "Se permite HTML básico (enlaces, listas, negrita, etc.)."
 msgid ""
 "Same HTML as a post, e.g. %s. Scripts and unsafe tags are stripped on save."
 msgstr ""
-"El mismo HTML que una publicación, p. %s. Los scripts y las etiquetas "
-"inseguras se eliminan al guardar."
+"Ten sam kod HTML co post, np. %s. Skrypty i niebezpieczne tagi są usuwane "
+"podczas zapisywania."
 
 #: tabby.php:48
 msgid ""
 "Tabby - Custom Product Tabs for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Tabby: las pestañas de productos personalizados para WooCommerce requieren "
-"que WooCommerce esté activo."
+"Tabby - Własne zakładki produktów dla WooCommerce wymaga aktywnej wtyczki "
+"WooCommerce."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
-msgstr "Próximamente"
+msgstr "Wkrótce"
 
 #: src/Admin/ProUpsell.php:78
 msgid "Coming soon"
-msgstr "Próximamente"
+msgstr "Wkrótce"
 
 #. translators: %d: yearly price in PLN
 #: src/Admin/ProUpsell.php:83
 #, php-format
 msgid "od %d zł/rok"
-msgstr "desde %d zł/año"
+msgstr "od %d zł/rok"
 
 #. translators: 1: currency symbol, 2: yearly price
 #: src/Admin/ProUpsell.php:88
 #, php-format
 msgid "from %1$s%2$d/yr"
-msgstr "desde %1$s%2$d/año"
+msgstr "od %1$s%2$d/rok"
 
 #: src/Admin/ProUpsell.php:97
 msgid "Upgrade to PRO"
-msgstr "Mejora a PRO"
+msgstr "Przejdź na PRO"
 
 #: src/Admin/ProUpsell.php:98
 msgid "Powiadom mnie"
-msgstr "Avísame"
+msgstr "Powiadom mnie"
 
 #: src/Admin/ProUpsell.php:98
 msgid "Get notified"
-msgstr "Avísame"
+msgstr "Powiadom mnie"
 
 #: src/Admin/ProUpsell.php:128
 msgid "Permission denied."
-msgstr "Permiso denegado."
+msgstr "Brak uprawnień."
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:158
 #, php-format
 msgid "Do more with %s"
-msgstr "Haz más con %s"
+msgstr "Zrób więcej dzięki %s"
 
 #: src/Admin/ProUpsell.php:165
 msgid "Dismiss this notice"
-msgstr "Descartar este aviso"
+msgstr "Odrzuć to powiadomienie"
 
 #: src/Admin/ProUpsell.php:182
 msgid "Unlock every PRO feature"
-msgstr "Desbloquea todas las funciones PRO"
+msgstr "Odblokuj wszystkie funkcje PRO"
 
 #: src/Admin/ProUpsell.php:195
 msgid "one licence, every PRO feature"
-msgstr "una licencia, todas las funciones PRO"
+msgstr "jedna licencja, wszystkie funkcje PRO"
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:214
 #, php-format
 msgid "What %s adds"
-msgstr "Lo que añade %s"
+msgstr "Co dodaje %s"
+
+#~ msgid "These tabs appear on every product, in the order listed here."
+#~ msgstr ""
+#~ "Te zakładki pojawiają się przy każdym produkcie, w kolejności podanej "
+#~ "tutaj."

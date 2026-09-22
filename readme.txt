@@ -1,10 +1,10 @@
-=== Plogins Tabby - Product Tabs for WooCommerce ===
+=== Langeto - Product Tabs for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.15
+Stable tag: 1.1.0
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,9 +13,9 @@ Add reusable custom tabs with your own content to every WooCommerce product page
 
 == Description ==
 
-Tabby lets you add your own reusable tabs to the WooCommerce single product page, alongside the native Description, Additional information and Reviews tabs.
+Langeto lets you add your own reusable tabs to the WooCommerce single product page, alongside the native Description, Additional information and Reviews tabs.
 
-Define your tabs once under **WooCommerce > Tabby Tabs** and they show up on every product. It suits content you'd otherwise paste into each product by hand: shipping and returns, size guides, care instructions, warranty notes.
+Define your tabs once under **WooCommerce > Langeto Tabs** and they show up on every product. It suits content you'd otherwise paste into each product by hand: shipping and returns, size guides, care instructions, warranty notes.
 
 Each tab is a title plus a content box that accepts the same limited HTML WordPress allows in posts (links, lists, bold, headings) via `wp_kses_post`. Your tabs render after the native WooCommerce tabs, and you can toggle each one on or off without deleting it.
 
@@ -39,15 +39,15 @@ The code lives at [github.com/wppoland/plogins-tabby](https://github.com/wppolan
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/tabby`, or install via Plugins > Add New.
+1. Upload the plugin to `/wp-content/plugins/langeto`, or install via Plugins > Add New.
 2. Activate it. WooCommerce must be active.
-3. Go to **WooCommerce > Tabby Tabs** to add your tabs.
+3. Go to **WooCommerce > Langeto Tabs** to add your tabs.
 
 == Frequently Asked Questions ==
 
 = Does it require WooCommerce? =
 
-Yes. Tabby requires an active WooCommerce installation.
+Yes. Langeto requires an active WooCommerce installation.
 
 = What HTML is allowed in tab content? =
 
@@ -59,7 +59,7 @@ On the single product page tab list, after the native WooCommerce tabs (Descript
 
 = Can I reuse the same tab on many products? =
 
-Yes. Tabs are created once under WooCommerce > Tabby and every enabled tab shows on every product, so one tab is reused across the whole catalogue by design. Choosing which products a tab appears on is not part of the free plugin.
+Yes. Tabs are created once under WooCommerce > Langeto and every enabled tab shows on every product, so one tab is reused across the whole catalogue by design. Choosing which products a tab appears on is not part of the free plugin.
 
 = Is tab HTML safe? =
 
@@ -72,18 +72,21 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == Screenshots ==
 
-1. The Tabby settings screen for managing reusable tabs.
+1. The Langeto settings screen for managing reusable tabs.
 2. Custom tabs rendered on the single product page.
 
 == External Services ==
 
-Tabby does not connect to any external services. It makes no remote API calls, loads no fonts, scripts or styles from a third party, and sends no data off your site. Your tab definitions are stored locally in a single WordPress option (`tabby_settings`), with a version marker in `tabby_db_version`, and both are removed on uninstall. The admin and front-end CSS and JavaScript it loads are bundled with the plugin and served from your own site.
+Langeto does not connect to any external services. It makes no remote API calls, loads no fonts, scripts or styles from a third party, and sends no data off your site. Your tab definitions are stored locally in a single WordPress option (`tabby_settings`), with a version marker in `tabby_db_version`, and both are removed on uninstall. The admin and front-end CSS and JavaScript it loads are bundled with the plugin and served from your own site.
 
 == Translations ==
 
-Plogins Tabby is fully translatable and ships the `plogins-tabby.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
+Langeto is fully translatable and ships the `langeto.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.0 =
+* Renamed to Langeto. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Langeto is Esperanto for a tab. The text domain follows the name; the stored data, the settings and every hook are unchanged.
 
 = 1.0.15 =
 * Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
