@@ -149,7 +149,7 @@ msgstr "Einfaches HTML ist zulässig (Links, Listen, Fettdruck usw.)."
 msgid ""
 "Same HTML as a post, e.g. %s. Scripts and unsafe tags are stripped on save."
 msgstr ""
-"Gleicher HTML-Code wie ein Beitrag, z. B. %s. Skripte und unsichere Tags "
+"Gleicher HTML-Code wie ein Beitrag, z. B. %s. Skripte und unsichere Tags "
 "werden beim Speichern entfernt."
 
 #: tabby.php:48
