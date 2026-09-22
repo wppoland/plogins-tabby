@@ -7,31 +7,31 @@ msgstr ""
 "POT-Creation-Date: 2026-06-16T20:23:22+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:23:22+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
-"Language-Team: German <de@li.org>\n"
-"Language: de_DE\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: plogins-tabby\n"
+"X-Domain: langeto\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: tabby.php
 msgid "Tabby - Custom Product Tabs for WooCommerce"
-msgstr "Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce"
+msgstr "Tabby - Pestañas de productos personalizados para WooCommerce"
 
 #. Plugin URI of the plugin
 #: tabby.php
 msgid "https://plogins.com/tabby/"
-msgstr "https://plogins.com/de/tabby/"
+msgstr "https://plogins.com/es/tabby/"
 
 #. Description of the plugin
 #: tabby.php
 msgid "Add custom tabs with your own content to WooCommerce product pages."
 msgstr ""
-"Füge benutzerdefinierte Registerkarten mit deinen eigenen Inhalten zu "
-"WooCommerce-Produktseiten hinzu."
+"Añade pestañas personalizadas con su propio contenido a las páginas de "
+"productos de WooCommerce."
 
 #. Author of the plugin
 #: tabby.php
@@ -45,49 +45,49 @@ msgstr "https://plogins.com/"
 
 #: src/Admin/Settings.php:57
 msgid "Tabby - Custom Product Tabs"
-msgstr "Tabby, Benutzerdefinierte Produktregisterkarten"
+msgstr "Tabby - Pestañas de productos personalizados"
 
 #: src/Admin/Settings.php:58
 msgid "Tabby Tabs"
-msgstr "Tabby-Tabs"
+msgstr "Pestañas Tabby"
 
 #: src/Admin/Settings.php:102
 msgid "Reusable tabs for every product page"
-msgstr "Wiederverwendbare Registerkarten für jede Produktseite"
+msgstr "Pestañas reutilizables para cada página de producto"
 
 #: src/Admin/Settings.php:103
 msgid ""
 "Define tabs once and they appear on all single product pages, after the "
 "native WooCommerce tabs. Basic HTML is allowed in tab content."
 msgstr ""
-"Definiere Tabs einmal und sie erscheinen auf allen einzelnen Produktseiten "
-"nach den nativen WooCommerce-Tabs. Im Tab-Inhalt ist einfaches HTML zulässig."
+"Defina las pestañas una vez y aparecerán en todas las páginas de productos "
+"individuales, después de las pestañas nativas de WooCommerce. Se permite "
+"HTML básico en el contenido de las pestañas."
 
 #: src/Admin/Settings.php:111
 msgid "General"
-msgstr "Allgemein"
+msgstr "General"
 
 #: src/Admin/Settings.php:115
 msgid "Enable Tabby"
-msgstr "Tabby aktivieren"
+msgstr "Habilitar Tabby"
 
 #: src/Admin/Settings.php:126
 msgid "Render custom tabs on single product pages."
-msgstr ""
-"Rendern Sie benutzerdefinierte Registerkarten auf einzelnen Produktseiten."
+msgstr "Representa pestañas personalizadas en páginas de un solo producto."
 
 #: src/Admin/Settings.php:129
 msgid ""
 "Master switch. Turn this off to hide every tab below at once without "
 "deleting them, your tabs stay saved and reappear when you turn it back on."
 msgstr ""
-"Hauptschalter. Deaktiviere diese Option, um alle unten aufgeführten Tabs "
-"gleichzeitig auszublenden, ohne sie zu löschen. deine Tabs bleiben "
-"gespeichert und werden wieder angezeigt, wenn du sie wieder aktivieren."
+"Interruptor maestro. Desactive esto para ocultar todas las pestañas "
+"siguientes a la vez sin eliminarlas; sus pestañas permanecen guardadas y "
+"reaparecen cuando lo vuelve a activar."
 
 #: src/Admin/Settings.php:138
 msgid "Tabs"
-msgstr "Tabs"
+msgstr "Pestañas"
 
 #: src/Admin/Settings.php:139
 msgid ""
@@ -95,53 +95,51 @@ msgid ""
 "the order listed here. A row with no title is dropped when you save, so "
 "leave a blank row to discard it."
 msgstr ""
-"Jede Registerkarte wird auf jeder Produktseite unterhalb der nativen "
-"WooCommerce-Registerkarten in der hier aufgeführten Reihenfolge angezeigt. "
-"Eine Zeile ohne Titel wird beim Speichern gelöscht. Lass also eine leere "
-"Zeile, um sie zu verwerfen."
+"Cada pestaña se muestra en cada página de producto, debajo de las pestañas "
+"nativas de WooCommerce, en el orden que se indica aquí. Una fila sin título "
+"se elimina al guardar, así que deje una fila en blanco para descartarla."
 
 #: src/Admin/Settings.php:152
 msgid ""
 "A tab with an empty content box is kept for later but stays off the "
 "storefront, since an empty tab has nothing to show."
 msgstr ""
-"Eine Registerkarte mit leerem Inhaltsfeld bleibt für später gespeichert, "
-"wird aber im Shop nicht angezeigt, da eine leere Registerkarte nichts zu "
-"zeigen hat."
+"Una pestaña con la caja de contenido vacía se guarda para más adelante, pero "
+"no se muestra en la tienda, ya que una pestaña vacía no tiene nada que "
+"mostrar."
 
 #: src/Admin/Settings.php:160
 msgid "Add tab"
-msgstr "Registerkarte hinzufügen"
+msgstr "Añadir pestaña"
 
 #: src/Admin/Settings.php:183
 msgid "Tab title"
-msgstr "Tab-Titel"
+msgstr "Título de la pestaña"
 
 #: src/Admin/Settings.php:189
 msgid "e.g. Shipping & Returns"
-msgstr "z.B. Versand und Rücksendungen"
+msgstr "p.ej. Envíos y devoluciones"
 
 #: src/Admin/Settings.php:199
 msgid "Enabled"
-msgstr "Aktiviert"
+msgstr "Habilitado"
 
 #: src/Admin/Settings.php:200
 msgid "shows this tab on the storefront; uncheck to hide just this one"
 msgstr ""
-"zeigt diese Registerkarte auf der Storefront an; Deaktiviere das "
-"Kontrollkästchen, um nur dieses auszublenden"
+"muestra esta pestaña en el escaparate; desmarque para ocultar solo este"
 
 #: src/Admin/Settings.php:204
 msgid "Remove this tab"
-msgstr "Entferne diese Registerkarte"
+msgstr "Eliminar esta pestaña"
 
 #: src/Admin/Settings.php:208
 msgid "Tab content"
-msgstr "Tab-Inhalt"
+msgstr "Contenido de la pestaña"
 
 #: src/Admin/Settings.php:213
 msgid "Basic HTML is allowed (links, lists, bold, etc.)."
-msgstr "Einfaches HTML ist zulässig (Links, Listen, Fettdruck usw.)."
+msgstr "Se permite HTML básico (enlaces, listas, negrita, etc.)."
 
 #. translators: %s: an example HTML snippet shown as inline guidance.
 #: src/Admin/Settings.php:219
@@ -149,73 +147,73 @@ msgstr "Einfaches HTML ist zulässig (Links, Listen, Fettdruck usw.)."
 msgid ""
 "Same HTML as a post, e.g. %s. Scripts and unsafe tags are stripped on save."
 msgstr ""
-"Gleicher HTML-Code wie ein Beitrag, z. B. %s. Skripte und unsichere Tags "
-"werden beim Speichern entfernt."
+"El mismo HTML que una publicación, p. %s. Los scripts y las etiquetas "
+"inseguras se eliminan al guardar."
 
 #: tabby.php:48
 msgid ""
 "Tabby - Custom Product Tabs for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Für Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce muss "
-"WooCommerce aktiv sein."
+"Tabby: las pestañas de productos personalizados para WooCommerce requieren "
+"que WooCommerce esté activo."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
-msgstr "Demnächst"
+msgstr "Próximamente"
 
 #: src/Admin/ProUpsell.php:78
 msgid "Coming soon"
-msgstr "Demnächst"
+msgstr "Próximamente"
 
 #. translators: %d: yearly price in PLN
 #: src/Admin/ProUpsell.php:83
 #, php-format
 msgid "od %d zł/rok"
-msgstr "ab %d zł/Jahr"
+msgstr "desde %d zł/año"
 
 #. translators: 1: currency symbol, 2: yearly price
 #: src/Admin/ProUpsell.php:88
 #, php-format
 msgid "from %1$s%2$d/yr"
-msgstr "ab %1$s%2$d/Jahr"
+msgstr "desde %1$s%2$d/año"
 
 #: src/Admin/ProUpsell.php:97
 msgid "Upgrade to PRO"
-msgstr "Auf PRO upgraden"
+msgstr "Mejora a PRO"
 
 #: src/Admin/ProUpsell.php:98
 msgid "Powiadom mnie"
-msgstr "Benachrichtige mich"
+msgstr "Avísame"
 
 #: src/Admin/ProUpsell.php:98
 msgid "Get notified"
-msgstr "Benachrichtige mich"
+msgstr "Avísame"
 
 #: src/Admin/ProUpsell.php:128
 msgid "Permission denied."
-msgstr "Zugriff verweigert."
+msgstr "Permiso denegado."
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:158
 #, php-format
 msgid "Do more with %s"
-msgstr "Mehr erreichen mit %s"
+msgstr "Haz más con %s"
 
 #: src/Admin/ProUpsell.php:165
 msgid "Dismiss this notice"
-msgstr "Diesen Hinweis ausblenden"
+msgstr "Descartar este aviso"
 
 #: src/Admin/ProUpsell.php:182
 msgid "Unlock every PRO feature"
-msgstr "Alle PRO-Funktionen freischalten"
+msgstr "Desbloquea todas las funciones PRO"
 
 #: src/Admin/ProUpsell.php:195
 msgid "one licence, every PRO feature"
-msgstr "eine Lizenz, alle PRO-Funktionen"
+msgstr "una licencia, todas las funciones PRO"
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:214
 #, php-format
 msgid "What %s adds"
-msgstr "Was %s ergänzt"
+msgstr "Lo que añade %s"
