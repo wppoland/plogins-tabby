@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tabby - Custom Product Tabs for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tabby\n"
-"POT-Creation-Date: 2026-06-16T20:23:22+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/langeto\n"
+"POT-Creation-Date: 2026-09-10T12:44:44+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:23:22+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -17,45 +17,104 @@ msgstr ""
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: tabby.php
-msgid "Tabby - Custom Product Tabs for WooCommerce"
-msgstr "Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce"
+#: langeto.php
+msgid "Langeto - Product Tabs for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
-#: tabby.php
-msgid "https://plogins.com/tabby/"
-msgstr "https://plogins.com/de/tabby/"
+#: langeto.php
+msgid "https://plogins.com/plogins-tabby/"
+msgstr ""
 
 #. Description of the plugin
-#: tabby.php
+#: langeto.php
 msgid "Add custom tabs with your own content to WooCommerce product pages."
 msgstr ""
 "Füge benutzerdefinierte Registerkarten mit deinen eigenen Inhalten zu "
 "WooCommerce-Produktseiten hinzu."
 
 #. Author of the plugin
-#: tabby.php
-msgid "WPPoland"
-msgstr "WPPoland"
+#: langeto.php
+msgid "WPPoland.com"
+msgstr ""
 
 #. Author URI of the plugin
-#: tabby.php
-msgid "https://plogins.com/"
-msgstr "https://plogins.com/"
+#: langeto.php
+msgid "https://wppoland.com"
+msgstr ""
 
-#: src/Admin/Settings.php:57
-msgid "Tabby - Custom Product Tabs"
-msgstr "Tabby, Benutzerdefinierte Produktregisterkarten"
+#: langeto.php:48
+msgid ""
+"Langeto - Product Tabs for WooCommerce requires WooCommerce to be active."
+msgstr ""
 
-#: src/Admin/Settings.php:58
-msgid "Tabby Tabs"
-msgstr "Tabby-Tabs"
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Demnächst"
 
-#: src/Admin/Settings.php:102
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Demnächst"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "ab %1$s%2$d/Jahr"
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr "Auf PRO upgraden"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr "Mehr erreichen mit %s"
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr "Alle PRO-Funktionen freischalten"
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr "eine Lizenz, alle PRO-Funktionen"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr "Was %s ergänzt"
+
+#: src/Admin/Settings.php:65
+msgid "Langeto - Product Tabs"
+msgstr ""
+
+#: src/Admin/Settings.php:66
+msgid "Langeto Tabs"
+msgstr ""
+
+#: src/Admin/Settings.php:113
 msgid "Reusable tabs for every product page"
 msgstr "Wiederverwendbare Registerkarten für jede Produktseite"
 
-#: src/Admin/Settings.php:103
+#: src/Admin/Settings.php:114
 msgid ""
 "Define tabs once and they appear on all single product pages, after the "
 "native WooCommerce tabs. Basic HTML is allowed in tab content."
@@ -63,20 +122,20 @@ msgstr ""
 "Definiere Tabs einmal und sie erscheinen auf allen einzelnen Produktseiten "
 "nach den nativen WooCommerce-Tabs. Im Tab-Inhalt ist einfaches HTML zulässig."
 
-#: src/Admin/Settings.php:111
+#: src/Admin/Settings.php:122
 msgid "General"
 msgstr "Allgemein"
 
-#: src/Admin/Settings.php:115
-msgid "Enable Tabby"
-msgstr "Tabby aktivieren"
-
 #: src/Admin/Settings.php:126
+msgid "Enable Langeto"
+msgstr ""
+
+#: src/Admin/Settings.php:137
 msgid "Render custom tabs on single product pages."
 msgstr ""
 "Rendern Sie benutzerdefinierte Registerkarten auf einzelnen Produktseiten."
 
-#: src/Admin/Settings.php:129
+#: src/Admin/Settings.php:140
 msgid ""
 "Master switch. Turn this off to hide every tab below at once without "
 "deleting them, your tabs stay saved and reappear when you turn it back on."
@@ -85,11 +144,32 @@ msgstr ""
 "gleichzeitig auszublenden, ohne sie zu löschen. deine Tabs bleiben "
 "gespeichert und werden wieder angezeigt, wenn du sie wieder aktivieren."
 
-#: src/Admin/Settings.php:138
+#: src/Admin/Settings.php:145
+msgid "Shortcodes and blocks in tabs"
+msgstr ""
+
+#: src/Admin/Settings.php:157
+msgid "Run tab content through the normal WordPress content filters."
+msgstr ""
+
+#: src/Admin/Settings.php:160
+msgid ""
+"Lets a tab body use shortcodes and blocks. Off by default, because it is a "
+"wider surface than the safe-HTML pass used otherwise. Only the tabs you "
+"wrote yourself are affected."
+msgstr ""
+
+#: src/Admin/Settings.php:161
+msgid ""
+"It applies to every tab below, not to one of them, so each tab says which "
+"pass it gets."
+msgstr ""
+
+#: src/Admin/Settings.php:170
 msgid "Tabs"
 msgstr "Tabs"
 
-#: src/Admin/Settings.php:139
+#: src/Admin/Settings.php:172
 msgid ""
 "Each tab shows on every product page, below the native WooCommerce tabs, in "
 "the order listed here. A row with no title is dropped when you save, so "
@@ -100,7 +180,7 @@ msgstr ""
 "Eine Zeile ohne Titel wird beim Speichern gelöscht. Lass also eine leere "
 "Zeile, um sie zu verwerfen."
 
-#: src/Admin/Settings.php:152
+#: src/Admin/Settings.php:174
 msgid ""
 "A tab with an empty content box is kept for later but stays off the "
 "storefront, since an empty tab has nothing to show."
@@ -109,42 +189,46 @@ msgstr ""
 "wird aber im Shop nicht angezeigt, da eine leere Registerkarte nichts zu "
 "zeigen hat."
 
-#: src/Admin/Settings.php:160
+#: src/Admin/Settings.php:196
 msgid "Add tab"
 msgstr "Registerkarte hinzufügen"
 
-#: src/Admin/Settings.php:183
+#: src/Admin/Settings.php:221
 msgid "Tab title"
 msgstr "Tab-Titel"
 
-#: src/Admin/Settings.php:189
+#: src/Admin/Settings.php:227
 msgid "e.g. Shipping & Returns"
 msgstr "z.B. Versand und Rücksendungen"
 
-#: src/Admin/Settings.php:199
+#: src/Admin/Settings.php:237
 msgid "Enabled"
 msgstr "Aktiviert"
 
-#: src/Admin/Settings.php:200
+#: src/Admin/Settings.php:238
 msgid "shows this tab on the storefront; uncheck to hide just this one"
 msgstr ""
 "zeigt diese Registerkarte auf der Storefront an; Deaktiviere das "
 "Kontrollkästchen, um nur dieses auszublenden"
 
-#: src/Admin/Settings.php:204
+#: src/Admin/Settings.php:242
 msgid "Remove this tab"
 msgstr "Entferne diese Registerkarte"
 
-#: src/Admin/Settings.php:208
+#: src/Admin/Settings.php:247
 msgid "Tab content"
 msgstr "Tab-Inhalt"
 
-#: src/Admin/Settings.php:213
+#: src/Admin/Settings.php:258
+msgid "shortcodes and blocks run here"
+msgstr ""
+
+#: src/Admin/Settings.php:265
 msgid "Basic HTML is allowed (links, lists, bold, etc.)."
 msgstr "Einfaches HTML ist zulässig (Links, Listen, Fettdruck usw.)."
 
 #. translators: %s: an example HTML snippet shown as inline guidance.
-#: src/Admin/Settings.php:219
+#: src/Admin/Settings.php:271
 #, php-format
 msgid ""
 "Same HTML as a post, e.g. %s. Scripts and unsafe tags are stripped on save."
@@ -152,70 +236,34 @@ msgstr ""
 "Gleicher HTML-Code wie ein Beitrag, z. B. %s. Skripte und unsichere Tags "
 "werden beim Speichern entfernt."
 
-#: tabby.php:48
-msgid ""
-"Tabby - Custom Product Tabs for WooCommerce requires WooCommerce to be "
-"active."
-msgstr ""
-"Für Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce muss "
-"WooCommerce aktiv sein."
+#~ msgid "Tabby - Custom Product Tabs for WooCommerce"
+#~ msgstr "Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Demnächst"
+#~ msgid "https://plogins.com/tabby/"
+#~ msgstr "https://plogins.com/de/tabby/"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Coming soon"
-msgstr "Demnächst"
+#~ msgid "WPPoland"
+#~ msgstr "WPPoland"
 
-#. translators: %d: yearly price in PLN
-#: src/Admin/ProUpsell.php:83
+#~ msgid "https://plogins.com/"
+#~ msgstr "https://plogins.com/"
+
+#~ msgid "Tabby - Custom Product Tabs"
+#~ msgstr "Tabby, Benutzerdefinierte Produktregisterkarten"
+
+#~ msgid "Tabby Tabs"
+#~ msgstr "Tabby-Tabs"
+
+#~ msgid "Enable Tabby"
+#~ msgstr "Tabby aktivieren"
+
+#~ msgid ""
+#~ "Tabby - Custom Product Tabs for WooCommerce requires WooCommerce to be "
+#~ "active."
+#~ msgstr ""
+#~ "Für Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce muss "
+#~ "WooCommerce aktiv sein."
+
 #, php-format
-msgid "od %d zł/rok"
-msgstr "ab %d zł/Jahr"
-
-#. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:88
-#, php-format
-msgid "from %1$s%2$d/yr"
-msgstr "ab %1$s%2$d/Jahr"
-
-#: src/Admin/ProUpsell.php:97
-msgid "Upgrade to PRO"
-msgstr "Auf PRO upgraden"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Powiadom mnie"
-msgstr "Benachrichtige mich"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Get notified"
-msgstr "Benachrichtige mich"
-
-#: src/Admin/ProUpsell.php:128
-msgid "Permission denied."
-msgstr "Zugriff verweigert."
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:158
-#, php-format
-msgid "Do more with %s"
-msgstr "Mehr erreichen mit %s"
-
-#: src/Admin/ProUpsell.php:165
-msgid "Dismiss this notice"
-msgstr "Diesen Hinweis ausblenden"
-
-#: src/Admin/ProUpsell.php:182
-msgid "Unlock every PRO feature"
-msgstr "Alle PRO-Funktionen freischalten"
-
-#: src/Admin/ProUpsell.php:195
-msgid "one licence, every PRO feature"
-msgstr "eine Lizenz, alle PRO-Funktionen"
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:214
-#, php-format
-msgid "What %s adds"
-msgstr "Was %s ergänzt"
+#~ msgid "od %d zł/rok"
+#~ msgstr "ab %d zł/Jahr"
