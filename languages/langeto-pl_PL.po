@@ -20,12 +20,12 @@ msgstr ""
 #. Plugin Name of the plugin
 #: langeto.php
 msgid "Langeto - Product Tabs for WooCommerce"
-msgstr ""
+msgstr "Langeto - zakładki produktu dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: langeto.php
 msgid "https://plogins.com/plogins-tabby/"
-msgstr ""
+msgstr "https://plogins.com/plogins-tabby/"
 
 #. Description of the plugin
 #: langeto.php
@@ -36,17 +36,17 @@ msgstr ""
 #. Author of the plugin
 #: langeto.php
 msgid "WPPoland.com"
-msgstr ""
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: langeto.php
 msgid "https://wppoland.com"
-msgstr ""
+msgstr "https://wppoland.com"
 
 #: langeto.php:48
 msgid ""
 "Langeto - Product Tabs for WooCommerce requires WooCommerce to be active."
-msgstr ""
+msgstr "Langeto - zakładki produktu dla WooCommerce wymaga aktywnego WooCommerce."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
@@ -104,11 +104,11 @@ msgstr "Co dodaje %s"
 
 #: src/Admin/Settings.php:65
 msgid "Langeto - Product Tabs"
-msgstr ""
+msgstr "Langeto - zakładki produktu"
 
 #: src/Admin/Settings.php:66
 msgid "Langeto Tabs"
-msgstr ""
+msgstr "Zakładki Langeto"
 
 #: src/Admin/Settings.php:113
 msgid "Reusable tabs for every product page"
@@ -129,7 +129,7 @@ msgstr "Ogólne"
 
 #: src/Admin/Settings.php:126
 msgid "Enable Langeto"
-msgstr ""
+msgstr "Włącz Langeto"
 
 #: src/Admin/Settings.php:137
 msgid "Render custom tabs on single product pages."
@@ -146,24 +146,24 @@ msgstr ""
 
 #: src/Admin/Settings.php:145
 msgid "Shortcodes and blocks in tabs"
-msgstr ""
+msgstr "Krótkie kody i bloki w zakładkach"
 
 #: src/Admin/Settings.php:157
 msgid "Run tab content through the normal WordPress content filters."
-msgstr ""
+msgstr "Przepuszczaj treść zakładek przez zwykłe filtry treści WordPressa."
 
 #: src/Admin/Settings.php:160
 msgid ""
 "Lets a tab body use shortcodes and blocks. Off by default, because it is a "
 "wider surface than the safe-HTML pass used otherwise. Only the tabs you "
 "wrote yourself are affected."
-msgstr ""
+msgstr "Pozwala treści zakładki korzystać z krótkich kodów i bloków. Domyślnie wyłączone, bo to szersza powierzchnia niż bezpieczne przetwarzanie HTML stosowane w przeciwnym razie. Dotyczy tylko zakładek napisanych przez Ciebie."
 
 #: src/Admin/Settings.php:161
 msgid ""
 "It applies to every tab below, not to one of them, so each tab says which "
 "pass it gets."
-msgstr ""
+msgstr "Dotyczy każdej zakładki poniżej, a nie jednej z nich, dlatego każda zakładka informuje, jakie przetwarzanie otrzymuje."
 
 #: src/Admin/Settings.php:170
 msgid "Tabs"
@@ -218,7 +218,7 @@ msgstr "Treść zakładki"
 
 #: src/Admin/Settings.php:258
 msgid "shortcodes and blocks run here"
-msgstr ""
+msgstr "krótkie kody i bloki działają tutaj"
 
 #: src/Admin/Settings.php:265
 msgid "Basic HTML is allowed (links, lists, bold, etc.)."
