@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Langeto Pro',
+    'name'       => 'Tabvera Pro',
     'url'        => 'https://plogins.com/plogins-tabby-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,

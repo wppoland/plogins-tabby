@@ -174,6 +174,7 @@ final class TabsRenderer implements HasHooks
         $rich = (bool) ($this->tabs->settings()['rich_content'] ?? false);
         if ((bool) apply_filters('tabby/use_rich_tab_content', $rich, $tab, $product)) {
             // Filter: tabby/tab_panel_html, rich tab panel HTML after the_content.
+            // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- the_content is the core filter, applied on purpose.
             return (string) apply_filters('tabby/tab_panel_html', apply_filters('the_content', $content), $tab, $product);
         }
 

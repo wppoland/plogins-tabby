@@ -3,171 +3,171 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tabby - Custom Product Tabs for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/langeto\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tabvera\n"
 "POT-Creation-Date: 2026-09-10T12:44:44+00:00\n"
-"PO-Revision-Date: 2026-06-15 12:00+0000\n"
+"PO-Revision-Date: 2026-06-16T20:23:22+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
-"Language-Team: Polish <pl@li.org>\n"
-"Language: pl_PL\n"
+"Language-Team: German <de@li.org>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
-"X-Domain: langeto\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: tabvera\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: langeto.php
-msgid "Langeto - Product Tabs for WooCommerce"
-msgstr "Langeto - zakładki produktu dla WooCommerce"
+#: tabvera.php
+msgid "Tabvera - Product Tabs for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
-#: langeto.php
+#: tabvera.php
 msgid "https://plogins.com/plogins-tabby/"
-msgstr "https://plogins.com/plogins-tabby/"
+msgstr ""
 
 #. Description of the plugin
-#: langeto.php
+#: tabvera.php
 msgid "Add custom tabs with your own content to WooCommerce product pages."
 msgstr ""
-"Dodawaj własne zakładki z własną treścią do stron produktów WooCommerce."
+"Füge benutzerdefinierte Registerkarten mit deinen eigenen Inhalten zu "
+"WooCommerce-Produktseiten hinzu."
 
 #. Author of the plugin
-#: langeto.php
+#: tabvera.php
 msgid "WPPoland.com"
-msgstr "WPPoland.com"
+msgstr ""
 
 #. Author URI of the plugin
-#: langeto.php
+#: tabvera.php
 msgid "https://wppoland.com"
-msgstr "https://wppoland.com"
+msgstr ""
 
-#: langeto.php:48
+#: tabvera.php:48
 msgid ""
-"Langeto - Product Tabs for WooCommerce requires WooCommerce to be active."
-msgstr "Langeto - zakładki produktu dla WooCommerce wymaga aktywnego WooCommerce."
+"Tabvera - Product Tabs for WooCommerce requires WooCommerce to be active."
+msgstr ""
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
-msgstr "Wkrótce"
+msgstr "Demnächst"
 
 #: src/Admin/ProUpsell.php:78
 msgid "Coming soon"
-msgstr "Wkrótce"
+msgstr "Demnächst"
 
 #. translators: 1: currency symbol, 2: yearly price
 #: src/Admin/ProUpsell.php:84
 #, php-format
 msgid "from %1$s%2$d/yr"
-msgstr "od %1$s%2$d/rok"
+msgstr "ab %1$s%2$d/Jahr"
 
 #: src/Admin/ProUpsell.php:93
 msgid "Upgrade to PRO"
-msgstr "Przejdź na PRO"
+msgstr "Auf PRO upgraden"
 
 #: src/Admin/ProUpsell.php:94
 msgid "Powiadom mnie"
-msgstr "Powiadom mnie"
+msgstr "Benachrichtige mich"
 
 #: src/Admin/ProUpsell.php:94
 msgid "Get notified"
-msgstr "Powiadom mnie"
+msgstr "Benachrichtige mich"
 
 #: src/Admin/ProUpsell.php:124
 msgid "Permission denied."
-msgstr "Brak uprawnień."
+msgstr "Zugriff verweigert."
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:154
 #, php-format
 msgid "Do more with %s"
-msgstr "Zrób więcej dzięki %s"
+msgstr "Mehr erreichen mit %s"
 
 #: src/Admin/ProUpsell.php:161
 msgid "Dismiss this notice"
-msgstr "Odrzuć to powiadomienie"
+msgstr "Diesen Hinweis ausblenden"
 
 #: src/Admin/ProUpsell.php:178
 msgid "Unlock every PRO feature"
-msgstr "Odblokuj wszystkie funkcje PRO"
+msgstr "Alle PRO-Funktionen freischalten"
 
 #: src/Admin/ProUpsell.php:191
 msgid "one licence, every PRO feature"
-msgstr "jedna licencja, wszystkie funkcje PRO"
+msgstr "eine Lizenz, alle PRO-Funktionen"
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:210
 #, php-format
 msgid "What %s adds"
-msgstr "Co dodaje %s"
+msgstr "Was %s ergänzt"
 
 #: src/Admin/Settings.php:65
-msgid "Langeto - Product Tabs"
-msgstr "Langeto - zakładki produktu"
+msgid "Tabvera - Product Tabs"
+msgstr ""
 
 #: src/Admin/Settings.php:66
-msgid "Langeto Tabs"
-msgstr "Zakładki Langeto"
+msgid "Tabvera Tabs"
+msgstr ""
 
 #: src/Admin/Settings.php:113
 msgid "Reusable tabs for every product page"
-msgstr "Zakładki wielokrotnego użytku dla każdej strony produktu"
+msgstr "Wiederverwendbare Registerkarten für jede Produktseite"
 
 #: src/Admin/Settings.php:114
 msgid ""
 "Define tabs once and they appear on all single product pages, after the "
 "native WooCommerce tabs. Basic HTML is allowed in tab content."
 msgstr ""
-"Zdefiniuj zakładki raz, a pojawią się na wszystkich stronach pojedynczych "
-"produktów, za natywnymi zakładkami WooCommerce. W treści zakładek dozwolony "
-"jest podstawowy kod HTML."
+"Definiere Tabs einmal und sie erscheinen auf allen einzelnen Produktseiten "
+"nach den nativen WooCommerce-Tabs. Im Tab-Inhalt ist einfaches HTML zulässig."
 
 #: src/Admin/Settings.php:122
 msgid "General"
-msgstr "Ogólne"
+msgstr "Allgemein"
 
 #: src/Admin/Settings.php:126
-msgid "Enable Langeto"
-msgstr "Włącz Langeto"
+msgid "Enable Tabvera"
+msgstr ""
 
 #: src/Admin/Settings.php:137
 msgid "Render custom tabs on single product pages."
-msgstr "Renderuj własne zakładki na stronach pojedynczych produktów."
+msgstr ""
+"Rendern Sie benutzerdefinierte Registerkarten auf einzelnen Produktseiten."
 
 #: src/Admin/Settings.php:140
 msgid ""
 "Master switch. Turn this off to hide every tab below at once without "
 "deleting them, your tabs stay saved and reappear when you turn it back on."
 msgstr ""
-"Przełącznik główny. Wyłącz tę opcję, aby ukryć wszystkie karty poniżej "
-"jednocześnie bez ich usuwania. Twoje karty pozostaną zapisane i pojawią się "
-"ponownie po ponownym włączeniu."
+"Hauptschalter. Deaktiviere diese Option, um alle unten aufgeführten Tabs "
+"gleichzeitig auszublenden, ohne sie zu löschen. deine Tabs bleiben "
+"gespeichert und werden wieder angezeigt, wenn du sie wieder aktivieren."
 
 #: src/Admin/Settings.php:145
 msgid "Shortcodes and blocks in tabs"
-msgstr "Krótkie kody i bloki w zakładkach"
+msgstr ""
 
 #: src/Admin/Settings.php:157
 msgid "Run tab content through the normal WordPress content filters."
-msgstr "Przepuszczaj treść zakładek przez zwykłe filtry treści WordPressa."
+msgstr ""
 
 #: src/Admin/Settings.php:160
 msgid ""
 "Lets a tab body use shortcodes and blocks. Off by default, because it is a "
 "wider surface than the safe-HTML pass used otherwise. Only the tabs you "
 "wrote yourself are affected."
-msgstr "Pozwala treści zakładki korzystać z krótkich kodów i bloków. Domyślnie wyłączone, bo to szersza powierzchnia niż bezpieczne przetwarzanie HTML stosowane w przeciwnym razie. Dotyczy tylko zakładek napisanych przez Ciebie."
+msgstr ""
 
 #: src/Admin/Settings.php:161
 msgid ""
 "It applies to every tab below, not to one of them, so each tab says which "
 "pass it gets."
-msgstr "Dotyczy każdej zakładki poniżej, a nie jednej z nich, dlatego każda zakładka informuje, jakie przetwarzanie otrzymuje."
+msgstr ""
 
 #: src/Admin/Settings.php:170
 msgid "Tabs"
-msgstr "Zakładki"
+msgstr "Tabs"
 
 #: src/Admin/Settings.php:172
 msgid ""
@@ -175,54 +175,57 @@ msgid ""
 "the order listed here. A row with no title is dropped when you save, so "
 "leave a blank row to discard it."
 msgstr ""
-"Każda zakładka jest wyświetlana na każdej stronie produktu, poniżej "
-"natywnych zakładek WooCommerce, w podanej tutaj kolejności. Wiersz bez "
-"tytułu jest usuwany podczas zapisywania, więc pozostaw pusty wiersz, aby go "
-"odrzucić."
+"Jede Registerkarte wird auf jeder Produktseite unterhalb der nativen "
+"WooCommerce-Registerkarten in der hier aufgeführten Reihenfolge angezeigt. "
+"Eine Zeile ohne Titel wird beim Speichern gelöscht. Lass also eine leere "
+"Zeile, um sie zu verwerfen."
 
 #: src/Admin/Settings.php:174
 msgid ""
 "A tab with an empty content box is kept for later but stays off the "
 "storefront, since an empty tab has nothing to show."
 msgstr ""
-"Zakładka z pustym polem treści zostaje zapisana na później, ale nie pojawia "
-"się w sklepie, ponieważ pusta zakładka nie ma nic do pokazania."
+"Eine Registerkarte mit leerem Inhaltsfeld bleibt für später gespeichert, "
+"wird aber im Shop nicht angezeigt, da eine leere Registerkarte nichts zu "
+"zeigen hat."
 
 #: src/Admin/Settings.php:196
 msgid "Add tab"
-msgstr "Dodaj zakładkę"
+msgstr "Registerkarte hinzufügen"
 
 #: src/Admin/Settings.php:221
 msgid "Tab title"
-msgstr "Tytuł zakładki"
+msgstr "Tab-Titel"
 
 #: src/Admin/Settings.php:227
 msgid "e.g. Shipping & Returns"
-msgstr "np. Wysyłka i zwroty"
+msgstr "z.B. Versand und Rücksendungen"
 
 #: src/Admin/Settings.php:237
 msgid "Enabled"
-msgstr "Włączona"
+msgstr "Aktiviert"
 
 #: src/Admin/Settings.php:238
 msgid "shows this tab on the storefront; uncheck to hide just this one"
-msgstr "pokazuje tę zakładkę na stronie sklepu; odznacz, aby ukryć tylko ten"
+msgstr ""
+"zeigt diese Registerkarte auf der Storefront an; Deaktiviere das "
+"Kontrollkästchen, um nur dieses auszublenden"
 
 #: src/Admin/Settings.php:242
 msgid "Remove this tab"
-msgstr "Usuń tę zakładkę"
+msgstr "Entferne diese Registerkarte"
 
 #: src/Admin/Settings.php:247
 msgid "Tab content"
-msgstr "Treść zakładki"
+msgstr "Tab-Inhalt"
 
 #: src/Admin/Settings.php:258
 msgid "shortcodes and blocks run here"
-msgstr "krótkie kody i bloki działają tutaj"
+msgstr ""
 
 #: src/Admin/Settings.php:265
 msgid "Basic HTML is allowed (links, lists, bold, etc.)."
-msgstr "Dozwolony jest podstawowy kod HTML (linki, listy, pogrubienie itp.)."
+msgstr "Einfaches HTML ist zulässig (Links, Listen, Fettdruck usw.)."
 
 #. translators: %s: an example HTML snippet shown as inline guidance.
 #: src/Admin/Settings.php:271
@@ -230,14 +233,14 @@ msgstr "Dozwolony jest podstawowy kod HTML (linki, listy, pogrubienie itp.)."
 msgid ""
 "Same HTML as a post, e.g. %s. Scripts and unsafe tags are stripped on save."
 msgstr ""
-"Ten sam kod HTML co post, np. %s. Skrypty i niebezpieczne tagi są usuwane "
-"podczas zapisywania."
+"Gleicher HTML-Code wie ein Beitrag, z. B. %s. Skripte und unsichere Tags "
+"werden beim Speichern entfernt."
 
 #~ msgid "Tabby - Custom Product Tabs for WooCommerce"
-#~ msgstr "Tabby - Własne zakładki produktów dla WooCommerce"
+#~ msgstr "Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce"
 
 #~ msgid "https://plogins.com/tabby/"
-#~ msgstr "https://plogins.com/tabby/"
+#~ msgstr "https://plogins.com/de/tabby/"
 
 #~ msgid "WPPoland"
 #~ msgstr "WPPoland"
@@ -246,26 +249,21 @@ msgstr ""
 #~ msgstr "https://plogins.com/"
 
 #~ msgid "Tabby - Custom Product Tabs"
-#~ msgstr "Tabby - Własne zakładki produktów"
+#~ msgstr "Tabby, Benutzerdefinierte Produktregisterkarten"
 
 #~ msgid "Tabby Tabs"
-#~ msgstr "Zakładki Tabby"
+#~ msgstr "Tabby-Tabs"
 
 #~ msgid "Enable Tabby"
-#~ msgstr "Włącz Tabby"
+#~ msgstr "Tabby aktivieren"
 
 #~ msgid ""
 #~ "Tabby - Custom Product Tabs for WooCommerce requires WooCommerce to be "
 #~ "active."
 #~ msgstr ""
-#~ "Tabby - Własne zakładki produktów dla WooCommerce wymaga aktywnej wtyczki "
-#~ "WooCommerce."
+#~ "Für Tabby, Benutzerdefinierte Produktregisterkarten für WooCommerce muss "
+#~ "WooCommerce aktiv sein."
 
 #, php-format
 #~ msgid "od %d zł/rok"
-#~ msgstr "od %d zł/rok"
-
-#~ msgid "These tabs appear on every product, in the order listed here."
-#~ msgstr ""
-#~ "Te zakładki pojawiają się przy każdym produkcie, w kolejności podanej "
-#~ "tutaj."
+#~ msgstr "ab %d zł/Jahr"

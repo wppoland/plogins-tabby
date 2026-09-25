@@ -4,7 +4,7 @@ includes:
 parameters:
     level: 6
     paths:
-        - langeto.php
+        - tabvera.php
         - uninstall.php
         - src
         - config
