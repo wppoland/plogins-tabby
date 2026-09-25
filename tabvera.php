@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Langeto - Product Tabs for WooCommerce
+ * Plugin Name:       Tabvera - Product Tabs for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-tabby/
  * Description:        Add custom tabs with your own content to WooCommerce product pages.
- * Version:           1.1.1
+ * Version:           1.1.2
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
@@ -11,7 +11,7 @@
  * Author URI:        https://wppoland.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       langeto
+ * Text Domain:       tabvera
  * Domain Path:       /languages
  * WC requires at least: 8.0
  * WC tested up to: 11.0
@@ -25,7 +25,7 @@ namespace Tabby;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.1.1';
+const VERSION     = '1.1.2';
 const PLUGIN_FILE = __FILE__;
 
 define('TABBY_DIR', plugin_dir_path(__FILE__));
@@ -45,7 +45,7 @@ add_action('plugins_loaded', static function (): void {
     if (! class_exists('WooCommerce')) {
         add_action('admin_notices', static function (): void {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Langeto - Product Tabs for WooCommerce requires WooCommerce to be active.', 'langeto');
+            echo esc_html__('Tabvera - Product Tabs for WooCommerce requires WooCommerce to be active.', 'tabvera');
             echo '</p></div>';
         });
         return;

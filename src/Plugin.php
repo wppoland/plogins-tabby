@@ -63,7 +63,7 @@ final class Plugin
 
         /**
          * Fires after Tabby has fully booted: container wired and all base hook
-         * subscribers registered. Add-ons (e.g. Langeto Pro) listen here to extend
+         * subscribers registered. Add-ons (e.g. Tabvera Pro) listen here to extend
          * the shared container and register their own hooks.
          *
          * @param Plugin $plugin The booted plugin instance.
