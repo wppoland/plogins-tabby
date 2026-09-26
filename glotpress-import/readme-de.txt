@@ -15,7 +15,7 @@ Füge jeder WooCommerce-Produktseite neben den nativen Tabs wiederverwendbare ei
 
 Mit Tabby kannst du der WooCommerce-Einzelproduktseite deine eigenen wiederverwendbaren Tabs hinzufügen, neben den nativen Tabs „Beschreibung“, „Weitere Informationen“ und „Bewertungen“.
 
-Definiere deine Tabs einmal unter <strong>WooCommerce → Tabby Tabs</strong> und sie erscheinen bei jedem Produkt. Das passt zu Inhalten, die du sonst von Hand in jedes Produkt einfügen würdest: Versand und Rücksendungen, Größentabellen, Pflegehinweise, Garantiehinweise.
+Definiere deine Tabs einmal unter <strong>WooCommerce > Tabby Tabs</strong> und sie erscheinen bei jedem Produkt. Das passt zu Inhalten, die du sonst von Hand in jedes Produkt einfügen würdest: Versand und Rücksendungen, Größentabellen, Pflegehinweise, Garantiehinweise.
 
 Jeder Tab besteht aus einem Titel und einem Inhaltsfeld, das dasselbe eingeschränkte HTML akzeptiert, das WordPress in Beiträgen erlaubt (Links, Listen, Fettdruck, Überschriften), über `wp_kses_post`. Deine Tabs werden nach den nativen WooCommerce-Tabs gerendert, und du kannst jeden einzelnen ein- oder ausschalten, ohne ihn zu löschen.
 
@@ -39,9 +39,9 @@ Der Code liegt unter https://github.com/wppoland/plogins-tabby, falls du ihn les
 
 == Installation ==
 
-1. Lade das Plugin nach `/wp-content/plugins/tabby` hoch oder installiere es über Plugins → Installieren.
+1. Lade das Plugin nach `/wp-content/plugins/tabby` hoch oder installiere es über Plugins > Installieren.
 2. Aktiviere es. WooCommerce muss aktiv sein.
-3. Gehe zu <strong>WooCommerce → Tabby Tabs</strong>, um deine Tabs hinzuzufügen.
+3. Gehe zu <strong>WooCommerce > Tabby Tabs</strong>, um deine Tabs hinzuzufügen.
 
 == Frequently Asked Questions ==
 
@@ -59,7 +59,7 @@ In der Tab-Liste der einzelnen Produktseite, nach den nativen WooCommerce-Tabs (
 
 = Can I reuse the same tab on many products? =
 
-Ja. Erstelle wiederverwendbare Tabs einmalig unter WooCommerce → Tabby und hänge sie dann pro Produkt an.
+Ja. Erstelle wiederverwendbare Tabs einmalig unter WooCommerce > Tabby und hänge sie dann pro Produkt an.
 
 = Is tab HTML safe? =
 

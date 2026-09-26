@@ -1,10 +1,10 @@
-=== Tabby - Product Tabs for WooCommerce ===
+=== Tabvera - Product Tabs for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.5
+Stable tag: 1.1.2
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,20 +13,20 @@ Add reusable custom tabs with your own content to every WooCommerce product page
 
 == Description ==
 
-Tabby lets you add your own reusable tabs to the WooCommerce single product page, alongside the native Description, Additional information and Reviews tabs.
+Tabvera lets you add your own reusable tabs to the WooCommerce single product page, alongside the native Description, Additional information and Reviews tabs.
 
-Define your tabs once under **WooCommerce → Tabby Tabs** and they show up on every product. It suits content you'd otherwise paste into each product by hand: shipping and returns, size guides, care instructions, warranty notes.
+Define your tabs once under **WooCommerce > Tabvera Tabs** and they show up on every product. It suits content you'd otherwise paste into each product by hand: shipping and returns, size guides, care instructions, warranty notes.
 
 Each tab is a title plus a content box that accepts the same limited HTML WordPress allows in posts (links, lists, bold, headings) via `wp_kses_post`. Your tabs render after the native WooCommerce tabs, and you can toggle each one on or off without deleting it.
 
-The code lives at https://github.com/wppoland/plogins-tabby if you want to read it, report a bug or suggest a tab feature.
+The code lives at [github.com/wppoland/plogins-tabby](https://github.com/wppoland/plogins-tabby) if you want to read it, report a bug or suggest a tab feature.
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-tabby/docs/
-* **Plugin page** - https://plogins.com/plogins-tabby/
-* **Source code** - https://github.com/wppoland/plogins-tabby
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-tabby/issues
+* **Documentation**: [plogins.com/plogins-tabby/docs/](https://plogins.com/plogins-tabby/docs/)
+* **Plugin page**: [plogins.com/plogins-tabby/](https://plogins.com/plogins-tabby/)
+* **Source code**: [github.com/wppoland/plogins-tabby](https://github.com/wppoland/plogins-tabby)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-tabby/issues](https://github.com/wppoland/plogins-tabby/issues)
 
 
 = What it does =
@@ -34,20 +34,20 @@ The code lives at https://github.com/wppoland/plogins-tabby if you want to read 
 * Adds your reusable tabs to every single product page, after Description, Additional information and Reviews.
 * Stores tab content as `wp_kses_post`-sanitised HTML, both on save and again on output.
 * Hooks the standard `woocommerce_product_tabs` filter at a late priority, so native and third-party tabs keep their place.
-* Admin screen follows core WordPress styling and respects the editor's light/dark preference.
+* Admin screen follows core WordPress styling.
 * A disabled tab, or one with no content, simply isn't rendered.
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/tabby`, or install via Plugins → Add New.
+1. Upload the plugin to `/wp-content/plugins/tabvera`, or install via Plugins > Add New.
 2. Activate it. WooCommerce must be active.
-3. Go to **WooCommerce → Tabby Tabs** to add your tabs.
+3. Go to **WooCommerce > Tabvera Tabs** to add your tabs.
 
 == Frequently Asked Questions ==
 
 = Does it require WooCommerce? =
 
-Yes. Tabby requires an active WooCommerce installation.
+Yes. Tabvera requires an active WooCommerce installation.
 
 = What HTML is allowed in tab content? =
 
@@ -59,7 +59,7 @@ On the single product page tab list, after the native WooCommerce tabs (Descript
 
 = Can I reuse the same tab on many products? =
 
-Yes. Create reusable tabs once under WooCommerce → Tabby, then attach them per product.
+Yes. Tabs are created once under WooCommerce > Tabvera and every enabled tab shows on every product, so one tab is reused across the whole catalogue by design. Choosing which products a tab appears on is not part of the free plugin.
 
 = Is tab HTML safe? =
 
@@ -72,18 +72,60 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == Screenshots ==
 
-1. The Tabby settings screen for managing reusable tabs.
+1. The Tabvera settings screen for managing reusable tabs.
 2. Custom tabs rendered on the single product page.
 
 == External Services ==
 
-Tabby does not connect to any external services. It makes no remote API calls, loads no fonts, scripts or styles from a third party, and sends no data off your site. Your tab definitions are stored locally in a single WordPress option (`tabby_settings`), with a version marker in `tabby_db_version`, and both are removed on uninstall. The admin and front-end CSS and JavaScript it loads are bundled with the plugin and served from your own site.
+Tabvera does not connect to any external services. It makes no remote API calls, loads no fonts, scripts or styles from a third party, and sends no data off your site. Your tab definitions are stored locally in a single WordPress option (`tabby_settings`), with a version marker in `tabby_db_version`, and both are removed on uninstall. The admin and front-end CSS and JavaScript it loads are bundled with the plugin and served from your own site.
 
 == Translations ==
 
-Plogins Tabby includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-tabby`, so WordPress.org language packs can also override or extend these bundled translations.
+Tabvera is fully translatable and ships the `tabvera.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.2 =
+* Renamed to Tabvera, a plain English name in place of the Esperanto one. The text domain and the plugin folder follow the name; the stored settings, options and every hook are unchanged.
+* Applying the core the_content filter to rich tab content is now marked as deliberate, so Plugin Check reports no warnings.
+
+= 1.1.1 =
+* The sidebar upgrade promo now follows the same dismissal as the banner. Dismissing the banner used to leave a full-height advert on the settings screen for good, which is not what the WordPress.org guideline on upgrade prompts means by used with moderation.
+
+= 1.1.0 =
+* Renamed to Langeto. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Langeto is Esperanto for a tab. The text domain follows the name; the stored data, the settings and every hook are unchanged.
+
+= 1.0.15 =
+* Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
+* Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it.
+
+= 1.0.14 =
+* Fixed: deleting the plugin left the per-user "dismiss" flag from the PRO notice in the database. Uninstall now removes it for every user, not just the one who dismissed it.
+
+= 1.0.13 =
+* Changed: **Shortcodes and blocks in tabs** now shows what it reaches. It is a single switch that changes how every tab body below is rendered, which was invisible from inside a tab, so each tab content box now carries a badge while the switch is on. The badge is rendered from the saved settings, so it is correct with JavaScript switched off, and it follows a tab you add before saving.
+
+= 1.0.12 =
+* New: **Shortcodes and blocks in tabs**, a setting on the Tabby screen. The plugin could always run a tab body through the normal WordPress content filters, but that path was held shut by a hardcoded value only the paid add-on ever flipped, which makes it a built-in feature the plugin refused to run. It is a setting now, off by default because it is a wider surface than the safe-HTML pass used otherwise.
+
+= 1.0.11 =
+* The translation template was regenerated. It still named an older version of the plugin and pointed at source lines that had since moved, which is what translation tools read to show a string in context.
+
+= 1.0.10 =
+* Renamed to Plogins Tabby - Product Tabs for WooCommerce so the name leads with the brand rather than a generic word, which is what the WordPress.org plugin review team asks for. The plugin slug is unchanged.
+
+= 1.0.9 =
+* Removed the "Tested up to" header from the main PHP file. It belongs in readme.txt only, where it is already declared; present in both, the header can override the readme and show a compatibility version that was never intended.
+
+= 1.0.8 =
+* Tested against WordPress 7.1. Verified by activating this build on a clean 7.1 install with WooCommerce 11.1, not by editing the header.
+
+= 1.0.7 =
+* Fixed the PRO promo on the settings screen quoting a price in PLN. PRO is priced and charged in EUR, so an admin on a Polish site was shown a zloty amount and then billed in euro, and the zloty figure was a fixed conversion that drifted from the real charge as the rate moved. The promo now shows the euro price that is actually taken.
+
+= 1.0.6 =
+* A tab with an empty content box no longer shows on the product page, so shoppers never open a tab that holds nothing but its heading.
+* The settings screen now says that such a tab is kept for later but stays off the storefront.
 
 = 1.0.4 =
 * Translations: completed Polish, German and Spanish for the PRO upgrade panel.
