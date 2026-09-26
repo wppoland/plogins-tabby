@@ -170,6 +170,49 @@
     margin-block-start: 0.1rem;
 }
 
+/*
+ * Per-tab pass badge. "Shortcodes and blocks in tabs" is a single switch that
+ * changes how every tab body below is rendered, which is invisible from inside
+ * a tab. The badge carries that state down to each box.
+ *
+ * Contrast on the badge tint (#f5ede3 as the browser actually paints it):
+ *   --tabby-accent-text #8a5a14 = 5.10:1   (text, AA needs 4.5:1)   PASS
+ */
+.tabby-repeater__pass {
+    display: inline-block;
+    margin-inline-start: 0.5em;
+    padding: 0.05em 0.55em;
+    border: 1px solid color-mix(in srgb, var(--tabby-accent) 35%, var(--tabby-card-bg));
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--tabby-accent) 12%, var(--tabby-card-bg));
+    color: var(--tabby-accent-text);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    vertical-align: 1px;
+}
+
+.tabby-repeater__pass[hidden] {
+    display: none;
+}
+
+/*
+ * The badge only starts hidden once the script is running. On a no-JS load it
+ * is painted flat, so a merchant never loses sight of it. The estate-wide
+ * prefers-reduced-motion block at the end of this file cancels the easing.
+ */
+.tabby-admin.is-enhanced .tabby-repeater__pass {
+    opacity: 0;
+    transform: translateY(-3px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.tabby-admin.is-enhanced .tabby-repeater__pass.is-shown {
+    opacity: 1;
+    transform: none;
+}
+
 .tabby-repeater__hint code {
     padding: 0.05em 0.4em;
     background: color-mix(in srgb, var(--tabby-accent) 8%, #fff);

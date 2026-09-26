@@ -10,12 +10,11 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Tabby Pro',
+    'name'       => 'Tabvera Pro',
     'url'        => 'https://plogins.com/plogins-tabby-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',
-    'price_pln'  => 85,
     'lead'       => [
         'en' => 'Category rules, tab order, icons, conditional display and rich content ship today.',
         'pl' => 'Reguły kategorii, kolejność, ikony, warunkowe wyświetlanie i bogata treść są wdrożone.',

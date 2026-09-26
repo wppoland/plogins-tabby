@@ -15,7 +15,7 @@ Dodaj do każdej strony produktu WooCommerce własne zakładki wielokrotnego uż
 
 Tabby umożliwia dodawanie własnych zakładek wielokrotnego użytku do strony pojedynczego produktu WooCommerce, obok natywnych zakładek Opis, Dodatkowe informacje i Recenzje.
 
-Zdefiniuj swoje zakładki raz w <strong>WooCommerce → Tabby Tabs</strong>, a pojawią się przy każdym produkcie. Sprawdza się przy treściach, które inaczej wklejałbyś ręcznie do każdego produktu: wysyłka i zwroty, tabele rozmiarów, instrukcje pielęgnacji, informacje o gwarancji.
+Zdefiniuj swoje zakładki raz w <strong>WooCommerce > Tabby Tabs</strong>, a pojawią się przy każdym produkcie. Sprawdza się przy treściach, które inaczej wklejałbyś ręcznie do każdego produktu: wysyłka i zwroty, tabele rozmiarów, instrukcje pielęgnacji, informacje o gwarancji.
 
 Każda zakładka to tytuł oraz pole treści, które przyjmuje ten sam ograniczony zestaw HTML, na jaki WordPress pozwala we wpisach (linki, listy, pogrubienie, nagłówki), poprzez `wp_kses_post`. Twoje zakładki renderują się po natywnych zakładkach WooCommerce i możesz włączać lub wyłączać każdą z nich bez usuwania.
 
@@ -39,9 +39,9 @@ Kod jest dostępny pod adresem https://github.com/wppoland/plogins-tabby, jeśli
 
 == Installation ==
 
-1. Prześlij wtyczkę do `/wp-content/plugins/tabby` lub zainstaluj przez Wtyczki → Dodaj nową.
+1. Prześlij wtyczkę do `/wp-content/plugins/tabby` lub zainstaluj przez Wtyczki > Dodaj nową.
 2. Włącz ją. WooCommerce musi być aktywne.
-3. Przejdź do <strong>WooCommerce → Tabby Tabs</strong>, aby dodać swoje zakładki.
+3. Przejdź do <strong>WooCommerce > Tabby Tabs</strong>, aby dodać swoje zakładki.
 
 == Frequently Asked Questions ==
 
@@ -59,7 +59,7 @@ Na liście zakładek na stronie pojedynczego produktu, po natywnych zakładkach 
 
 = Can I reuse the same tab on many products? =
 
-Tak. Utwórz zakładki wielokrotnego użytku raz w WooCommerce → Tabby, a następnie podłącz je do poszczególnych produktów.
+Tak. Utwórz zakładki wielokrotnego użytku raz w WooCommerce > Tabby, a następnie podłącz je do poszczególnych produktów.
 
 = Is tab HTML safe? =
 

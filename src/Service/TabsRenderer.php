@@ -75,6 +75,14 @@ final class TabsRenderer implements HasHooks
         $seen     = [];
 
         foreach ($resolved as $tab) {
+            // A tab with an empty content box used to be registered anyway: the
+            // merchant saved a title with no body, and the shopper got a real
+            // clickable tab that opened onto a heading and nothing else. Content
+            // is what the panel is for, so a bodyless tab never reaches the strip.
+            if ('' === trim($tab->content)) {
+                continue;
+            }
+
             // Guarantee a unique array key even if two tabs share an id.
             $key = 'tabby_' . $tab->id;
             $n   = 1;
@@ -123,13 +131,6 @@ final class TabsRenderer implements HasHooks
             return;
         }
 
-        if ('' !== $resolved->title) {
-            printf(
-                '<h2 class="tabby-tab__title">%s</h2>',
-                esc_html($resolved->title),
-            );
-        }
-
         if ('' === trim($resolved->content)) {
             return;
         }
@@ -138,6 +139,16 @@ final class TabsRenderer implements HasHooks
 
         if ('' === trim(wp_strip_all_tags($html))) {
             return;
+        }
+
+        // The title is printed after the body checks, not before them: printing
+        // it first is what left shoppers looking at a lone heading whenever the
+        // content came back empty.
+        if ('' !== $resolved->title) {
+            printf(
+                '<h2 class="tabby-tab__title">%s</h2>',
+                esc_html($resolved->title),
+            );
         }
 
         printf(
@@ -155,9 +166,15 @@ final class TabsRenderer implements HasHooks
      */
     private function formatPanelHtml(string $content, Tab $tab, ?\WC_Product $product): string
     {
-        // Filter: tabby/use_rich_tab_content, premium add-ons enable shortcode/block processing.
-        if ((bool) apply_filters('tabby/use_rich_tab_content', false, $tab, $product)) {
+        // Shortcodes and blocks inside a tab body. The merchant's own setting
+        // is the default: this used to be a hardcoded false that only the paid
+        // add-on ever flipped, which made it a built-in feature the plugin
+        // refused to run. Off out of the box because running the_content over
+        // stored HTML is a bigger surface than wp_kses_post.
+        $rich = (bool) ($this->tabs->settings()['rich_content'] ?? false);
+        if ((bool) apply_filters('tabby/use_rich_tab_content', $rich, $tab, $product)) {
             // Filter: tabby/tab_panel_html, rich tab panel HTML after the_content.
+            // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- the_content is the core filter, applied on purpose.
             return (string) apply_filters('tabby/tab_panel_html', apply_filters('the_content', $content), $tab, $product);
         }
 
