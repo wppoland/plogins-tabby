@@ -101,6 +101,12 @@ final class Settings implements HasHooks
         <div class="wrap tabby-admin">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
 
+            <?php
+            // WordPress prints this by itself only under Settings; a WooCommerce
+            // submenu posting to options.php gets no "Settings saved" otherwise.
+            settings_errors();
+            ?>
+
             <?php $this->proUpsell()->banner(); ?>
 
             <div class="tabby-admin__intro">
