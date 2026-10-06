@@ -16,8 +16,8 @@ return [
     'price_from' => 19,
     'currency'   => 'EUR',
     'lead'       => [
-        'en' => 'Category rules, tab order, icons, conditional display and rich content ship today.',
-        'pl' => 'Reguły kategorii, kolejność, ikony, warunkowe wyświetlanie i bogata treść są wdrożone.',
+        'en' => 'Category rules, tab order, icons and conditional display ship today.',
+        'pl' => 'Reguły kategorii, kolejność, ikony i warunkowe wyświetlanie są wdrożone.',
     ],
     'features'   => [
         [
@@ -35,10 +35,6 @@ return [
         [
             'en' => ['title' => 'Conditional display', 'desc' => 'Show or hide tabs by stock status or user role (shipped).'],
             'pl' => ['title' => 'Warunkowe wyświetlanie', 'desc' => 'Pokaż lub ukryj zakładki według stanu magazynowego lub roli (wdrożone).'],
-        ],
-        [
-            'en' => ['title' => 'Rich content', 'desc' => 'Shortcodes and blocks inside tab content (shipped).'],
-            'pl' => ['title' => 'Bogata treść', 'desc' => 'Shortcode i bloki w treści zakładki (wdrożone).'],
         ],
     ],
 ];
