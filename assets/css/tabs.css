@@ -40,6 +40,15 @@
 	--tabby-ease: cubic-bezier(0.16, 0.84, 0.34, 1);
 
 	position: relative;
+}
+
+/*
+ * The gutter lives on our own children, not on the panel: WooCommerce's
+ * ".woocommerce div.product .woocommerce-tabs .panel { padding: 0 }" outranks
+ * any panel selector, which let the spine sit on the first letter of the text.
+ */
+.tabby-tab__title,
+.tabby-tab__content {
 	padding-inline-start: var(--tabby-gutter);
 }
 
