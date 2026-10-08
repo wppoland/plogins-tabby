@@ -4,7 +4,7 @@ Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -32,7 +32,8 @@ The code lives at [github.com/wppoland/plogins-tabby](https://github.com/wppolan
 = What it does =
 
 * Adds your reusable tabs to every single product page, after Description, Additional information and Reviews.
-* Stores tab content as `wp_kses_post`-sanitised HTML, both on save and again on output.
+* Stores tab content as `wp_kses_post`-sanitised HTML on save, and by default sanitises it again on output.
+* Optional **Shortcodes and blocks in tabs** setting (off by default) runs tab content through the standard WordPress content filters instead, so shortcodes and blocks render.
 * Hooks the standard `woocommerce_product_tabs` filter at a late priority, so native and third-party tabs keep their place.
 * Admin screen follows core WordPress styling.
 * A disabled tab, or one with no content, simply isn't rendered.
@@ -51,7 +52,7 @@ Yes. Tabvera requires an active WooCommerce installation.
 
 = What HTML is allowed in tab content? =
 
-The same safe subset WordPress allows in post content (`wp_kses_post`): links, lists, headings, bold/italic, images, blockquotes and similar. Scripts and unsafe markup are stripped on save and on render.
+The same safe subset WordPress allows in post content (`wp_kses_post`): links, lists, headings, bold/italic, images, blockquotes and similar. Scripts and unsafe markup are stripped on save, and again on render unless **Shortcodes and blocks in tabs** is on.
 
 = Where do the custom tabs appear? =
 
@@ -63,7 +64,7 @@ Yes. Tabs are created once under WooCommerce > Tabvera and every enabled tab sho
 
 = Is tab HTML safe? =
 
-Yes. Content is sanitised with `wp_kses_post` on save and on output; scripts are stripped.
+Yes. Content is sanitised with `wp_kses_post` on save, and with the default settings again on output; scripts are stripped. With **Shortcodes and blocks in tabs** on, the output pass is the standard WordPress content filters instead of `wp_kses_post`, so whatever a shortcode or block returns is printed as that shortcode or block produced it.
 
 
 = Does this plugin work on WordPress Multisite? =
@@ -84,6 +85,12 @@ Tabvera does not connect to any external services. It makes no remote API calls,
 Tabvera is fully translatable and ships the `tabvera.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.4 =
+* Fixed: the ochre edge on Tabvera's tab panels no longer covers the first letter of the title and text on themes that load the default WooCommerce stylesheet.
+* Fixed: saving the Tabvera settings now shows the "Settings saved" confirmation, and any save error.
+* The upgrade card no longer lists shortcodes and blocks in tabs, which the free plugin already does.
+* The readme now describes the Shortcodes and blocks in tabs setting and what it changes about output sanitising.
 
 = 1.1.3 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tabby - Custom Product Tabs for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tabvera\n"
-"POT-Creation-Date: 2026-09-10T12:44:44+00:00\n"
+"POT-Creation-Date: 2026-10-05T11:15:20+00:00\n"
 "PO-Revision-Date: 2026-06-15 12:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -12,8 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Domain: tabvera\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -43,61 +42,48 @@ msgstr "WPPoland.com"
 msgid "https://wppoland.com"
 msgstr "https://wppoland.com"
 
-#: tabvera.php:48
-msgid ""
-"Tabvera - Product Tabs for WooCommerce requires WooCommerce to be active."
-msgstr "Tabvera - zakładki produktu dla WooCommerce wymaga aktywnego WooCommerce."
-
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Wkrótce"
-
-#: src/Admin/ProUpsell.php:78
+#: src/Admin/ProUpsell.php:85
 msgid "Coming soon"
 msgstr "Wkrótce"
 
 #. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:84
+#: src/Admin/ProUpsell.php:91
 #, php-format
 msgid "from %1$s%2$d/yr"
 msgstr "od %1$s%2$d/rok"
 
-#: src/Admin/ProUpsell.php:93
+#: src/Admin/ProUpsell.php:100
 msgid "Upgrade to PRO"
 msgstr "Przejdź na PRO"
 
-#: src/Admin/ProUpsell.php:94
-msgid "Powiadom mnie"
-msgstr "Powiadom mnie"
-
-#: src/Admin/ProUpsell.php:94
+#: src/Admin/ProUpsell.php:101
 msgid "Get notified"
 msgstr "Powiadom mnie"
 
-#: src/Admin/ProUpsell.php:124
+#: src/Admin/ProUpsell.php:131
 msgid "Permission denied."
 msgstr "Brak uprawnień."
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:154
+#: src/Admin/ProUpsell.php:161
 #, php-format
 msgid "Do more with %s"
 msgstr "Zrób więcej dzięki %s"
 
-#: src/Admin/ProUpsell.php:161
+#: src/Admin/ProUpsell.php:168
 msgid "Dismiss this notice"
 msgstr "Odrzuć to powiadomienie"
 
-#: src/Admin/ProUpsell.php:178
+#: src/Admin/ProUpsell.php:190
 msgid "Unlock every PRO feature"
 msgstr "Odblokuj wszystkie funkcje PRO"
 
-#: src/Admin/ProUpsell.php:191
+#: src/Admin/ProUpsell.php:203
 msgid "one licence, every PRO feature"
 msgstr "jedna licencja, wszystkie funkcje PRO"
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:210
+#: src/Admin/ProUpsell.php:222
 #, php-format
 msgid "What %s adds"
 msgstr "Co dodaje %s"
@@ -157,13 +143,19 @@ msgid ""
 "Lets a tab body use shortcodes and blocks. Off by default, because it is a "
 "wider surface than the safe-HTML pass used otherwise. Only the tabs you "
 "wrote yourself are affected."
-msgstr "Pozwala treści zakładki korzystać z krótkich kodów i bloków. Domyślnie wyłączone, bo to szersza powierzchnia niż bezpieczne przetwarzanie HTML stosowane w przeciwnym razie. Dotyczy tylko zakładek napisanych przez Ciebie."
+msgstr ""
+"Pozwala treści zakładki korzystać z krótkich kodów i bloków. Domyślnie "
+"wyłączone, bo to szersza powierzchnia niż bezpieczne przetwarzanie HTML "
+"stosowane w przeciwnym razie. Dotyczy tylko zakładek napisanych przez "
+"Ciebie."
 
 #: src/Admin/Settings.php:161
 msgid ""
 "It applies to every tab below, not to one of them, so each tab says which "
 "pass it gets."
-msgstr "Dotyczy każdej zakładki poniżej, a nie jednej z nich, dlatego każda zakładka informuje, jakie przetwarzanie otrzymuje."
+msgstr ""
+"Dotyczy każdej zakładki poniżej, a nie jednej z nich, dlatego każda zakładka"
+" informuje, jakie przetwarzanie otrzymuje."
 
 #: src/Admin/Settings.php:170
 msgid "Tabs"
@@ -233,6 +225,18 @@ msgstr ""
 "Ten sam kod HTML co post, np. %s. Skrypty i niebezpieczne tagi są usuwane "
 "podczas zapisywania."
 
+#: tabvera.php:48
+msgid ""
+"Tabvera - Product Tabs for WooCommerce requires WooCommerce to be active."
+msgstr ""
+"Tabvera - zakładki produktu dla WooCommerce wymaga aktywnego WooCommerce."
+
+#~ msgid "Wkrótce"
+#~ msgstr "Wkrótce"
+
+#~ msgid "Powiadom mnie"
+#~ msgstr "Powiadom mnie"
+
 #~ msgid "Tabby - Custom Product Tabs for WooCommerce"
 #~ msgstr "Tabby - Własne zakładki produktów dla WooCommerce"
 
@@ -267,5 +271,4 @@ msgstr ""
 
 #~ msgid "These tabs appear on every product, in the order listed here."
 #~ msgstr ""
-#~ "Te zakładki pojawiają się przy każdym produkcie, w kolejności podanej "
-#~ "tutaj."
+#~ "Te zakładki pojawiają się przy każdym produkcie, w kolejności podanej tutaj."
