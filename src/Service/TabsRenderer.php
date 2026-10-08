@@ -153,7 +153,7 @@ final class TabsRenderer implements HasHooks
 
         printf(
             '<div class="tabby-tab__content">%s</div>',
-            $html, // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Sanitised in formatPanelHtml or via the_content when PRO is active.
+            wp_kses_post($html)
         );
     }
 
