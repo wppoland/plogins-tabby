@@ -41,12 +41,19 @@ The code lives at [github.com/wppoland/plogins-tabby](https://github.com/wppolan
 
 == Tabvera Pro ==
 
-Tabvera Pro is a separate paid plugin that works on top of Tabvera. It adds:
+Tabvera Pro is a separate paid plugin that extends Tabvera:
 
-* Category rules
-* Tab ordering
-* Tab icons
-* Conditional display
+| Feature | Free | Pro |
+|:--- |:---:|:---:|
+| Global tabs | Yes | Yes |
+| Per-tab toggle | Yes | Yes |
+| Master switch | Yes | Yes |
+| Safe HTML | Yes | Yes |
+| After native tabs | Yes | Yes |
+| Category rules | - | Yes |
+| Tab ordering | - | Yes |
+| Tab icons | - | Yes |
+| Conditional display | - | Yes |
 
 The free edition is not a trial and its features stay available without a time limit.
 
