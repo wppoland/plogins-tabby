@@ -12,6 +12,8 @@ defined('ABSPATH') || exit;
 return [
     'name'       => 'Tabvera Pro',
     'url'        => 'https://plogins.com/plogins-tabby-pro/pricing/',
+    'campaign'   => 'plogins-tabby',
+    'locales'    => ['pl', 'de', 'es'],
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',
