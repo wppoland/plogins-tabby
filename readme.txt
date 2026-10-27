@@ -4,7 +4,7 @@ Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -41,19 +41,22 @@ The code lives at [github.com/wppoland/plogins-tabby](https://github.com/wppolan
 
 == Tabvera Pro ==
 
-Tabvera Pro is a separate paid plugin that extends Tabvera:
+Tabvera Pro is a separate paid plugin that extends Tabvera.
 
-| Feature | Free | Pro |
-|:--- |:---:|:---:|
-| Global tabs | Yes | Yes |
-| Per-tab toggle | Yes | Yes |
-| Master switch | Yes | Yes |
-| Safe HTML | Yes | Yes |
-| After native tabs | Yes | Yes |
-| Category rules | - | Yes |
-| Tab ordering | - | Yes |
-| Tab icons | - | Yes |
-| Conditional display | - | Yes |
+Included in Tabvera:
+
+* Global tabs
+* Per-tab toggle
+* Master switch
+* Safe HTML
+* After native tabs
+
+Tabvera Pro adds:
+
+* Category rules
+* Tab ordering
+* Tab icons
+* Conditional display
 
 The free edition is not a trial and its features stay available without a time limit.
 
@@ -108,6 +111,10 @@ Tabvera does not connect to any external services. It makes no remote API calls,
 Tabvera is fully translatable and ships the `tabvera.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.6 =
+* The Upgrade to PRO links open the pricing page in the admin's language where plogins.com has one, and tell plogins.com which plugin the visit came from (utm_source, utm_medium and utm_campaign in the link). Nothing is sent from your site.
+* Readme: the PRO section lists what the free plugin includes and what the paid edition adds as two lists, which WordPress.org can display (it does not display tables).
 
 = 1.1.5 =
 * Readme only: a PRO section with links to the paid edition.
