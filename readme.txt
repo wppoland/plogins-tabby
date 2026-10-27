@@ -4,7 +4,7 @@ Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -27,6 +27,7 @@ The code lives at [github.com/wppoland/plogins-tabby](https://github.com/wppolan
 * **Plugin page**: [plogins.com/plogins-tabby/](https://plogins.com/plogins-tabby/)
 * **Source code**: [github.com/wppoland/plogins-tabby](https://github.com/wppoland/plogins-tabby)
 * **Bug reports and feature requests**: [github.com/wppoland/plogins-tabby/issues](https://github.com/wppoland/plogins-tabby/issues)
+* **Tabvera Pro**: [plogins.com/plogins-tabby-pro/](https://plogins.com/plogins-tabby-pro/)
 
 
 = What it does =
@@ -37,6 +38,21 @@ The code lives at [github.com/wppoland/plogins-tabby](https://github.com/wppolan
 * Hooks the standard `woocommerce_product_tabs` filter at a late priority, so native and third-party tabs keep their place.
 * Admin screen follows core WordPress styling.
 * A disabled tab, or one with no content, simply isn't rendered.
+
+== Tabvera Pro ==
+
+Tabvera Pro is a separate paid plugin that works on top of Tabvera. It adds:
+
+* Category rules
+* Tab ordering
+* Tab icons
+* Conditional display
+
+The free edition is not a trial and its features stay available without a time limit.
+
+* **Tabvera Pro** - [plogins.com/plogins-tabby-pro/](https://plogins.com/plogins-tabby-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-tabby-pro/pricing/](https://plogins.com/plogins-tabby-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-tabby-pro/docs/](https://plogins.com/plogins-tabby-pro/docs/)
 
 == Installation ==
 
@@ -85,6 +101,9 @@ Tabvera does not connect to any external services. It makes no remote API calls,
 Tabvera is fully translatable and ships the `tabvera.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.5 =
+* Readme only: a PRO section with links to the paid edition.
 
 = 1.1.4 =
 * Fixed: the ochre edge on Tabvera's tab panels no longer covers the first letter of the title and text on themes that load the default WooCommerce stylesheet.
