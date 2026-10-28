@@ -21,7 +21,7 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: tabvera.php
-msgid "https://plogins.com/plogins-tabby/"
+msgid "https://plogins.com/tabvera/"
 msgstr ""
 
 #. Description of the plugin
