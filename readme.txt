@@ -4,7 +4,7 @@ Tags: woocommerce, product tabs, custom tabs, product page, tabs
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -19,15 +19,15 @@ Define your tabs once under **WooCommerce > Tabvera Tabs** and they show up on e
 
 Each tab is a title plus a content box that accepts the same limited HTML WordPress allows in posts (links, lists, bold, headings) via `wp_kses_post`. Your tabs render after the native WooCommerce tabs, and you can toggle each one on or off without deleting it.
 
-The code lives at [github.com/wppoland/plogins-tabby](https://github.com/wppoland/plogins-tabby) if you want to read it, report a bug or suggest a tab feature.
+The code lives at [github.com/wppoland/tabvera](https://github.com/wppoland/tabvera) if you want to read it, report a bug or suggest a tab feature.
 
 = Documentation and links =
 
-* **Documentation**: [plogins.com/plogins-tabby/docs/](https://plogins.com/plogins-tabby/docs/)
-* **Plugin page**: [plogins.com/plogins-tabby/](https://plogins.com/plogins-tabby/)
-* **Source code**: [github.com/wppoland/plogins-tabby](https://github.com/wppoland/plogins-tabby)
-* **Bug reports and feature requests**: [github.com/wppoland/plogins-tabby/issues](https://github.com/wppoland/plogins-tabby/issues)
-* **Tabvera Pro**: [plogins.com/plogins-tabby-pro/](https://plogins.com/plogins-tabby-pro/)
+* **Documentation**: [plogins.com/tabvera/docs/](https://plogins.com/tabvera/docs/)
+* **Plugin page**: [plogins.com/tabvera/](https://plogins.com/tabvera/)
+* **Source code**: [github.com/wppoland/tabvera](https://github.com/wppoland/tabvera)
+* **Bug reports and feature requests**: [github.com/wppoland/tabvera/issues](https://github.com/wppoland/tabvera/issues)
+* **Tabvera Pro**: [plogins.com/tabvera-pro/](https://plogins.com/tabvera-pro/)
 
 
 = What it does =
@@ -60,9 +60,9 @@ Tabvera Pro adds:
 
 The free edition is not a trial and its features stay available without a time limit.
 
-* **Tabvera Pro** - [plogins.com/plogins-tabby-pro/](https://plogins.com/plogins-tabby-pro/)
-* **Compare editions and pricing** - [plogins.com/plogins-tabby-pro/pricing/](https://plogins.com/plogins-tabby-pro/pricing/)
-* **PRO documentation** - [plogins.com/plogins-tabby-pro/docs/](https://plogins.com/plogins-tabby-pro/docs/)
+* **Tabvera Pro** - [plogins.com/tabvera-pro/](https://plogins.com/tabvera-pro/)
+* **Compare editions and pricing** - [plogins.com/tabvera-pro/pricing/](https://plogins.com/tabvera-pro/pricing/)
+* **PRO documentation** - [plogins.com/tabvera-pro/docs/](https://plogins.com/tabvera-pro/docs/)
 
 == Installation ==
 
@@ -111,6 +111,9 @@ Tabvera does not connect to any external services. It makes no remote API calls,
 Tabvera is fully translatable and ships the `tabvera.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.7 =
+* Links point at the new plogins.com address and the renamed GitHub repository.
 
 = 1.1.6 =
 * The Upgrade to PRO links open the pricing page in the admin's language where plogins.com has one, and tell plogins.com which plugin the visit came from (utm_source, utm_medium and utm_campaign in the link). Nothing is sent from your site.

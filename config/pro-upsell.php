@@ -4,15 +4,15 @@
  * scripts/gen-pro-upsell.mjs. The admin upsell renders this; curate the
  * feature list to fit this plugin's settings screen (do not invent features).
  *
- * @package plogins-tabby-pro
+ * @package tabvera-pro
  */
 
 defined('ABSPATH') || exit;
 
 return [
     'name'       => 'Tabvera Pro',
-    'url'        => 'https://plogins.com/plogins-tabby-pro/pricing/',
-    'campaign'   => 'plogins-tabby',
+    'url'        => 'https://plogins.com/tabvera-pro/pricing/',
+    'campaign'   => 'tabvera',
     'locales'    => ['pl', 'de', 'es'],
     'sellable'   => true,
     'price_from' => 19,
